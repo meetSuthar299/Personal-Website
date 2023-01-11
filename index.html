@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Suthar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5e0a1a032.js" crossorigin="anonymous"></script>    <script src="scrolls-main/dist/scrolls.min.js"></script>
+</head>
+
+<body id="header">
+
+    <div class="nav-bar">
+        <img src="images/Meet.logo.png" alt="logo" class="logo">
+        <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+
+        <label for="menu-icon"></label>
+        <nav class="nav">
+            <ul class="pt-5">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li>
+                    <a href="#">Contact</a>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100008195223641"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/meetsuthar/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/meetsuthar/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/meetsuthar/"><i class="fab fa-github"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- -------------------About-------------------- -->
+    <div id="about">
+
+        <div class="about-header">
+            <h1>Hi, I'm <span>Meet Suthar!</span></h1>
+        </div>
+        <div class="about-content">
+            <img src="images/meetPic.jpg">
+            <div class="about-info">
+                <div class="about-info-title">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        This section is about me!
+                    </p>
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <di class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <span>UI?UX</span><br>Designing Web Apps interface
+                        </li>
+                        </li>
+                        <li>
+                            <span>Web Development</span><br>Web App Development
+                        </li>
+                        </li>
+                        <li>
+                            <span>Application Development</span><br>Design and Building Android/iOS Apps
+                        </li>
+                        </li>
+                    </ul>
+                </di>
+                <di class="tab-contents" id="experience">
+                    <ul>
+                        <li>
+                            <span>Systems Admin - HYAS Infisec.</span><br>Inscharg of day to day IT Department
+                            projects, device configs, software suport...
+                        </li>
+                        </li>
+                        <li>
+                            <span>Application Support/Development - CNOOC International</span><br>I did Stuff!
+                        </li>
+                        </li>
+                        <li>
+                            <span>Customer Service Rep - TD Canada Trust</span><br>Money and stuff
+                        </li>
+                        </li>
+                    </ul>
+                </di>
+                <di class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <span>Computer Informations Systems - Mount Roual University</span><br>Computer science
+                            cources and Business courses. (list all compSci courses and technologies used)
+                        </li>
+                        </li>
+                        <li>
+                            <span>Web Development Certificate</span><br>Web App Development
+                        </li>
+                        </li>
+                    </ul>
+                </di>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ------------------- services -------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I will design your website</p>
+                    <a href="#">Learn more</a>
+                </div scrolls scrolls-duration="1000" scrolls-delay="500" scrolls-easing="ease-in">
+                <div>
+                    <i class="fa-solid fa-camera"></i>
+                    <h2>Photography</h2>
+                    <p>I will take pics for you</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div scrolls scrolls-duration="1000" scrolls-delay="500" scrolls-easing="ease-in">
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Photo Editing</h2>
+                    <p>I will edit yopur photos</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Lost and Found for Dogs App</h3>
+                        <p>I made this App with a group of 3 students. The app will help people report and find lost
+                            dogs.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Photography</h3>
+                        <p>All client photography</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Other Programming Work </h3>
+                        <p>All client photography</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ------------Contact-------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fab fa-paper-plane"></i>meetsuthar299@gmail.com</p>
+                    <p><i class="fab fa-phone"></i>(587) 434-2178</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100008195223641"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/meetsuthar/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/meetsuthar/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class=" btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Meet Suthar</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
