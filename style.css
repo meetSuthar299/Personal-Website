@@ -601,3 +601,24 @@ form .btn2{
 }
 
 */
+
+
+
+  
+
+#about {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: scroll-slower 0.5s ease-out forwards;
+  }
+  
+  @keyframes scroll-slower {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(10%);
+    }
+  }
