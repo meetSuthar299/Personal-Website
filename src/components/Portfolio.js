@@ -1,3 +1,4 @@
+
 function Portfolio() {
     return (
         <div id="portfolio">
@@ -34,5 +35,6 @@ function Portfolio() {
         </div>
     );
 }
+
 
 export default Portfolio;
