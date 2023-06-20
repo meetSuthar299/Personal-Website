@@ -35,8 +35,6 @@ const About = ({ resumeData }) => {
                                 <span>Application Development</span><br />Design and Building Android/iOS Apps
                             </li>
                         </ul>
-
-
                     </div>
                     <div className="tab-contents" id="experience">
                         <div>
@@ -74,7 +72,7 @@ const About = ({ resumeData }) => {
                 </div>
             </div>
         </div>
-    );
+    ); 
 
 };
 
