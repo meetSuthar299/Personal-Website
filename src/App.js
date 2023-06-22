@@ -4,6 +4,7 @@ import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import React from 'react';
+import { BrowserRouter } from "react-router-dom";
 
 import './styles/About.css';
 import './styles/services.css';
@@ -86,7 +87,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <About resumeData={resumeData} />
+      <BrowserRouter>
+        <About resumeData={resumeData} />
+      </BrowserRouter>
       <Services />
       <Portfolio />
       <Contact />
