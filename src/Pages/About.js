@@ -5,9 +5,9 @@ import Education from '../components/Education';
 import Experience from '../components/Experience';
 
 const About = () => {
-    return (
+    return ( 
         <div id="about"> 
-                <div className="about-content">
+                <div className="about-content"> 
                     <img src="images/meetPic.jpg" alt="Meet Suthar" />
                     <div className="about-info">
                         <div className="about-info-title">
