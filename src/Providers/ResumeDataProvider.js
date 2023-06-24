@@ -74,7 +74,7 @@ const data = [
 
 
 const ResumeDataProvider = ({children}) => {
-    const [resumeData, setResumeData] = React.useState(data);
+    const [resumeData] = React.useState(data);
 
     return(
         <ResumeDataContext.Provider value={{resumeData}} >

@@ -1,4 +1,4 @@
-import Header from './Pages/Header.js';
+import Header from './components/Header';
 import About from './Pages/About.js';
 import Services from './Pages/Services';
 import Portfolio from './Pages/Portfolio';
@@ -12,17 +12,15 @@ import './styles/About.css';
 import './styles/services.css';
 import './styles/portfolio.css';
 import './styles/contact.css';
-import './styles/nav.css';
+//import './styles/navBar Style.css';
 import './styles/style.css';
 
 function App() {
-
-
   return (
     <div className="App">
       <ResumeDataProvider>
-        <Home />
         <Header />
+        <Home />
         <BrowserRouter>
           <About />
         </BrowserRouter>
