@@ -1,7 +1,7 @@
 import React from "react";
 import { useResumeDataContext } from "../Providers/ResumeDataProvider";
 
-const AboutHeader = () => {
+const Home = () => {
     const {resumeData} = useResumeDataContext();
     return (
         <div className="about-header">
@@ -10,4 +10,4 @@ const AboutHeader = () => {
     )
 }
 
-export default AboutHeader;
+export default Home;

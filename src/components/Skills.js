@@ -1,7 +1,7 @@
 import React from 'react';
-import { useResumeDataContext } from '../Providers/ResumeDataProvider';
+//import { useResumeDataContext } from '../Providers/ResumeDataProvider';
 
-function Skills({props}) {
+function Skills() {
     return (
         <div className="tab-contents active-tab" id="skills">
             <ul>

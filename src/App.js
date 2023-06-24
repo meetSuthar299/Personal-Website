@@ -6,6 +6,7 @@ import Contact from './Pages/Contact.js'
 import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import ResumeDataProvider from './Providers/ResumeDataProvider.js';
+import Home from './Pages/Home.js'
 
 import './styles/About.css';
 import './styles/services.css';
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <ResumeDataProvider>
+        <Home />
         <Header />
         <BrowserRouter>
           <About />

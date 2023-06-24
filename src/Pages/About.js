@@ -3,12 +3,10 @@ import { Routes, Route, Link } from "react-router-dom";
 import Skills from "../components/Skills";
 import Education from '../components/Education';
 import Experience from '../components/Experience';
-import AboutHeader from '../components/AboutHeader';
 
 const About = () => {
     return (
-        <div id="about">
-                <AboutHeader />
+        <div id="about"> 
                 <div className="about-content">
                     <img src="images/meetPic.jpg" alt="Meet Suthar" />
                     <div className="about-info">
