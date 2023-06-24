@@ -1,10 +1,11 @@
-import Header from './components/Header.js';
-import About from './components/About';
-import Services from './components/Services';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import Header from './Pages/Header.js';
+import About from './Pages/About.js';
+import Services from './Pages/Services';
+import Portfolio from './Pages/Portfolio';
+import Contact from './Pages/Contact.js'
 import React from 'react';
 import { BrowserRouter } from "react-router-dom";
+import ResumeDataProvider from './Providers/ResumeDataProvider.js';
 
 import './styles/About.css';
 import './styles/services.css';
@@ -14,17 +15,19 @@ import './styles/nav.css';
 import './styles/style.css';
 
 function App() {
-  
+
 
   return (
     <div className="App">
-      <Header />
-      <BrowserRouter>
-        <About/>
-      </BrowserRouter>
-      <Services />
-      <Portfolio />
-      <Contact />
+      <ResumeDataProvider>
+        <Header />
+        <BrowserRouter>
+          <About />
+        </BrowserRouter>
+        <Services />
+        <Portfolio />
+        <Contact />
+      </ResumeDataProvider>
     </div>
   );
 }
