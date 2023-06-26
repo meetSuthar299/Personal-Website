@@ -12,12 +12,12 @@ import './styles/About.css';
 import './styles/services.css';
 import './styles/portfolio.css';
 import './styles/contact.css';
-//import './styles/navBar Style.css';
+import './styles/navBar Style.css';
 import './styles/style.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" class="text-center overflow-hidden">
       <ResumeDataProvider>
         <Header />
         <Home />
@@ -25,7 +25,7 @@ function App() {
           <About />
         </BrowserRouter>
         <Services />
-        <Portfolio />
+        {/* <Portfolio /> */}
         <Contact />
       </ResumeDataProvider>
     </div>

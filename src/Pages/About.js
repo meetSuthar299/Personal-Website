@@ -4,13 +4,14 @@ import Skills from "../components/Skills";
 import Education from '../components/Education';
 import Experience from '../components/Experience';
 import { useResumeDataContext } from "../Providers/ResumeDataProvider";
+import UserImg from "../Assets/images/meetPic.jpg"
 
 const About = () => {
     const {resumeData} = useResumeDataContext();
     return ( 
-        <div id="about"> 
+        <div id="about" class="relative py-10"> 
                 <div className="about-content"> 
-                    <img src="images/meetPic.jpg" alt="Meet Suthar" />
+                    <img src={UserImg} alt="Meet Suthar" class = "max-w-4xl"/>
                     <div className="about-info">
                         <div className="about-info-title">
                             <h1 className="sub-title">About Me</h1>
@@ -18,14 +19,14 @@ const About = () => {
                         </div>
                         <div>
                             <nav className='tab-titles'>
-                                <Link to="/skills" className="tab-links" >Skills</Link>
+                                <Link to="/" className="tab-links" >Skills</Link>
                                 <Link to="/experience" className="tab-links" >Experience</Link>
                                 <Link to="/education" className="tab-links" >Education</Link>
                             </nav>
                         </div>
                         <div>
                             <Routes>
-                                <Route path="/skills" element={<Skills />}> </Route>
+                                <Route path="/" element={<Skills />}> </Route>
                                 <Route path="/experience" element={<Experience />}> </Route>
                                 <Route path="/education" element={<Education />} > </Route>
                             </Routes> 
