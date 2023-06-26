@@ -68,7 +68,7 @@ const Header = () => {
   );
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 shadow-md bg-[rgba(71,64,64,0.34)] backdrop-blur">
+    <header className="fixed top-0 left-0 w-full z-50 shadow-md bg-[rgba(48,43,43,0.34)] backdrop-blur">
       <nav className="flex items-center justify-between px-6 py-4">
         <div className="flex items-center">
           <NavLink to="home">
