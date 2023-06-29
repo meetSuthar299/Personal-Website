@@ -1,29 +1,45 @@
 import React from "react";
 import { useResumeDataContext } from "../Providers/ResumeDataProvider";
+import { FaGraduationCap, FaCertificate } from 'react-icons/fa';
 
 const Education = () => {
-    const {resumeData} = useResumeDataContext();
+    const { resumeData } = useResumeDataContext();
+
     return (
-        <div className="tab-contents active-tab" id="education">
+        <div className="tab-contents active-tab bg-gray-200">
             <div>
                 {resumeData[0].education.map((education, index) => (
-                    <div key={index}>
-                        <h3>{education.degree}</h3>
-                        <p>{education.university}</p>
-                        <p>Completion Date: {education.completionDate}</p>
-                        <p>Grade: {education.grade}</p>
+                    <div
+                        key={index}
+                        className="bg-white bg-opacity-90 p-4 rounded-lg mb-4 flex items-start"
+                    >
+                        <FaGraduationCap className="text-blue-500 text-3xl mr-4 mt-1" />
+                        <div>
+                            <h3 className="text-xl font-semibold mb-2">{education.degree}</h3>
+                            <p className="text-lg mb-2">{education.university}</p>
+                            <p className="text-gray-600 mb-1">Completion Date: {education.completionDate}</p>
+                            <p className="text-gray-600 mb-1">Grade: {education.grade}</p>
+                        </div>
                     </div>
                 ))}
-                <h3>Certifications:</h3>
-                <ul>
-                    {Object.values(resumeData[0].certifications[0]).map(
-                        (certification, index) => (
-                            <li key={index}>{certification[0].name} | Completion Date: {certification[0].completionDate}</li>
-                        )
-                    )}
-                </ul>
+                <div className="bg-white bg-opacity-90 p-4 rounded-lg flex items-start">
+                    <FaCertificate className="text-blue-500 text-3xl mr-4 mt-1" />
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">Certifications:</h3>
+                        <ul className="mb-2">
+                            {Object.values(resumeData[0].certifications[0]).map(
+                                (certification, index) => (
+                                    <li key={index} className="text-gray-600 mb-1">
+                                        {certification[0].name} | Completion Date: {certification[0].completionDate}
+                                    </li>
+                                )
+                            )}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     );
-}
+};
+
 export default Education;

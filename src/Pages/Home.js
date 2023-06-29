@@ -1,10 +1,8 @@
 import React from "react";
 import { useResumeDataContext } from "../Providers/ResumeDataProvider";
 import "../styles/wave.css"
-import SocualMediaLinks from "../components/SocialmediaLinks";
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Typed from 'react-typed';
+import backgroundImage from '../Assets/images/homeBG2.jpg';
 
 const navigation = [
     { name: 'Product', href: '#' },
@@ -12,14 +10,28 @@ const navigation = [
     { name: 'Marketplace', href: '#' },
     { name: 'Company', href: '#' },
 ]
-
+const TypingText = ({ text }) => (
+    <Typed
+        strings={[text]}
+        typeSpeed={150}
+        backSpeed={200}
+        loop={true}
+    />
+);
 
 const Home = () => {
     const { resumeData } = useResumeDataContext();
     return (
-        <div id="home" class="h-screen flex justify-center items-center bg-gradient-to-tr from-[#b8b8b8] to-[#4b3eff]">
+        <div id="home" class="h-screen flex justify-center items-center backdrop-blur-3xl bg-backgroundImage">
             {/* <div class ="wave overflow-y-hidden"></div> */}
-            <h1 class="text-5xl" >Hi, I'm <span class="text-red-800">{resumeData[0].name}!</span></h1>
+            <h1 className="text-4xl font-mono">
+                {"<h1> Hi I'm <span>"}
+                <span className="text-red-800">
+                    <TypingText text={resumeData[0].name} />
+                </span>
+                {"</span> </h1>"}
+            </h1>
+
         </div>
     )
 }

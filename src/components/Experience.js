@@ -1,21 +1,25 @@
 import React from "react";
 import { useResumeDataContext } from "../Providers/ResumeDataProvider";
+import { FaBriefcase } from 'react-icons/fa';
 
 const Experience = () => {
-    const {resumeData} = useResumeDataContext();
+    const { resumeData } = useResumeDataContext();
 
-    var message =  Object.values(resumeData[0].experience[0]).map((experience, index) => (
-            <div key={index}>
-                <h3>{experience[0].position}</h3>
-                <p>{experience[0].company}</p>
-                <p>
+    var message = Object.values(resumeData[0].experience[0]).map((experience, index) => (
+        <div key={index} className="bg-white bg-opacity-90 p-4 rounded-lg mb-4 flex">
+            <FaBriefcase className="text-blue-500 text-3xl mr-4" />
+            <div>
+                <h3 className="text-xl font-semibold mb-2">{experience[0].position}</h3>
+                <p className="text-lg mb-2">{experience[0].company}</p>
+                <p className="text-gray-600">
                     {experience[0].startDate} - {experience[0].endDate}
                 </p>
             </div>
-        ));
+        </div>
+    ));
 
     return (
-        <div className="tab-contents active-tab" id="experience">
+        <div className="tab-contents active-tab bg-gray-200">
             <div>
                 {message}
             </div>
