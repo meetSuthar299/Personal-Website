@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import logo from "../Assets/images/Meet.logo.png";
+import Logo from './Logo';
+import SocualMediaLinks from './SocialmediaLinks';
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -19,7 +21,7 @@ const Header = () => {
       smooth={true}
       duration={1000}
       offset={-100}
-      className="ml-4 text-gray-600 hover:text-gray-900 transition duration-300 ease-in-out cursor-pointer"
+      className="text-sm font-semibold leading-6 text-gray-900"
       onClick={handleLinkClick}
     >
       {children}
@@ -68,28 +70,31 @@ const Header = () => {
   );
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 shadow-md bg-[rgba(48,43,43,0.34)] backdrop-blur">
+    <header className="fixed top-0 left-0 w-full z-50 shadow-md bg-[rgba(0,0,0,0.48)] backdrop-blur">
       <nav className="flex items-center justify-between px-6 py-4">
+
         <div className="flex items-center">
-          <NavLink to="home">
-            <div className="flex items-center">
-              <img src={logo} alt="Logo" className="w-16 h-9 mr-2 rounded-full" />
-            </div>
-          </NavLink>
+          <Logo />
         </div>
+
+
         <div className="flex items-center">
-          <div className="hidden md:flex">
+          <div className="hidden lg:flex lg:gap-x-12">
+            <SocualMediaLinks />
             <MenuLinks />
           </div>
           <MobileMenu />
         </div>
       </nav>
       {isDropdownOpen && (
-        <div className="md:hidden bg-white shadow-md">
+        <div className="md:hidden shadow-md">
+          <SocualMediaLinks />
           <MenuLinks />
         </div>
       )}
     </header>
+
+
   );
 };
 

@@ -7,9 +7,10 @@ import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import ResumeDataProvider from './Providers/ResumeDataProvider.js';
 import Home from './Pages/Home.js'
+import Footer from './components/Footer';
 
 import './styles/About.css';
-import './styles/services.css';
+// import './styles/services.css';
 import './styles/portfolio.css';
 import './styles/contact.css';
 import './styles/navBar Style.css';
@@ -27,6 +28,7 @@ function App() {
         <Services />
         {/* <Portfolio /> */}
         <Contact />
+        <Footer />
       </ResumeDataProvider>
     </div>
   );
