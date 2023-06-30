@@ -45,7 +45,7 @@ const About = () => {
     }, []);
 
     return (
-        <div id="about" className="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div id="about" className="mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen-2xl md:px-26 lg:px-8">
             <div className="flex flex-col lg:flex-row p-10">
                 <div className='flex justify-center p-6'>
                     <img src={UserImg} alt="Meet Suthar" className="max-h-96 max-w-fit rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105" />
