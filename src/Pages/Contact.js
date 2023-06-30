@@ -29,7 +29,7 @@ function Contact() {
         //     </div>
         // </div>
 
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
           <h2 class="mb-6 text-3xl font-bold">Contact us</h2>
           <p class="mb-6 text-neutral-500 dark:text-neutral-300">

@@ -22,7 +22,7 @@ const TypingText = ({ text }) => (
 const Home = () => {
     const { resumeData } = useResumeDataContext();
     return (
-        <div id="home" class="h-screen flex justify-center items-center backdrop-blur-3xl bg-backgroundImage">
+        <div id="home" class="h-screen flex justify-center items-center bg-backgroundImage">
             {/* <div class ="wave overflow-y-hidden"></div> */}
             <h1 className="text-4xl font-mono">
                 {"<h1> Hi I'm <span>"}

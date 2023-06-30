@@ -6,14 +6,14 @@ const Education = () => {
     const { resumeData } = useResumeDataContext();
 
     return (
-        <div className="tab-contents active-tab bg-gray-200">
+        <div className="tab-contents active-tab">
             <div>
                 {resumeData[0].education.map((education, index) => (
                     <div
                         key={index}
-                        className="bg-white bg-opacity-90 p-4 rounded-lg mb-4 flex items-start"
+                        className="bg-white bg-opacity-90 p-4 rounded-lg flex items-start"
                     >
-                        <FaGraduationCap className="text-blue-500 text-3xl mr-4 mt-1" />
+                        <FaGraduationCap className="text-2xl mr-4 mt-1" />
                         <div>
                             <h3 className="text-xl font-semibold mb-2">{education.degree}</h3>
                             <p className="text-lg mb-2">{education.university}</p>
@@ -23,7 +23,7 @@ const Education = () => {
                     </div>
                 ))}
                 <div className="bg-white bg-opacity-90 p-4 rounded-lg flex items-start">
-                    <FaCertificate className="text-blue-500 text-3xl mr-4 mt-1" />
+                    <FaCertificate className="text-2xl mr-4 mt-1" />
                     <div>
                         <h3 className="text-xl font-semibold mb-2">Certifications:</h3>
                         <ul className="mb-2">

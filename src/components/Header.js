@@ -70,7 +70,7 @@ const Header = () => {
   );
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 shadow-md bg-[rgba(0,0,0,0.48)] backdrop-blur">
+    <header className="fixed top-0 left-0 w-full z-50 shadow-md bg-[rgba(0,0,0,0.48)] backdrop-blur border-black border-2">
       <nav className="flex items-center justify-between px-6 py-4">
 
         <div className="flex items-center">
