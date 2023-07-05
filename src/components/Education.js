@@ -11,9 +11,9 @@ const Education = () => {
                 {resumeData[0].education.map((education, index) => (
                     <div
                         key={index}
-                        className="bg-white bg-opacity-90 p-4 rounded-lg flex items-start"
+                        className=" bg-opacity-90 p-4 rounded-lg flex items-start"
                     >
-                        <FaGraduationCap className="text-2xl mr-4 mt-1" />
+                        <FaGraduationCap className="text-3xl mr-4 mt-1" />
                         <div>
                             <h3 className="text-xl font-semibold mb-2">{education.degree}</h3>
                             <p className="text-lg mb-2">{education.university}</p>
@@ -22,7 +22,7 @@ const Education = () => {
                         </div>
                     </div>
                 ))}
-                <div className="bg-white bg-opacity-90 p-4 rounded-lg flex items-start">
+                <div className="bg-opacity-90 p-4 rounded-lg flex items-start">
                     <FaCertificate className="text-2xl mr-4 mt-1" />
                     <div>
                         <h3 className="text-xl font-semibold mb-2">Certifications:</h3>

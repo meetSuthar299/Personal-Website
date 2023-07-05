@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 import Skills from "../components/Skills";
 import Education from '../components/Education';
@@ -44,9 +44,24 @@ const About = () => {
         };
     }, []);
 
+    const [marginTop, setMarginTop] = useState(0);
+    useEffect(() => {
+        const handleResize = () => {
+            const screenHeight = window.innerHeight;
+            setMarginTop(screenHeight);
+        };
+
+        handleResize(); // Set initial margin top
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+
+
     return (
-        <div id="about" className="mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen-2xl md:px-26 lg:px-8">
-            <div className="flex flex-col lg:flex-row p-10">
+        <div id="about" className=" relative mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen-2xl md:px-26 lg:px-8 mt-screen z-20 bg-gray-200" style={{ marginTop }}>
+            <div className="flex flex-col lg:flex-row p-10 bg-gray-200">
                 <div className='flex justify-center p-6'>
                     <img src={UserImg} alt="Meet Suthar" className="max-h-96 max-w-fit rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105" />
                 </div>
@@ -56,14 +71,15 @@ const About = () => {
                         className="opacity-0 transform transition-opacity duration-500 delay-500 ease-in-out"
                         ref={aboutInfoTitleRef}
                     >
-                        <h1 className="sub-title">About Me</h1>
-                        <p>{resumeData[0].aboutMe}</p>
+                        <h1 className="text-4xl pb-4">About Me</h1>
+                        <p className='pb-4 text-lg'>{resumeData[0].aboutMe}</p>
                     </div>
+                    <hr className="w-full my-6 border-gray-300" />
                     <div>
                         <nav id="AboutTabTitles" className="flex justify-center mt-4">
-                            <Link to="/" className="tab-links rounded-lg px-4 py-2 shadow mr-2 transition-colors duration-200 ease-in-out bg-blue-500 text-white hover:bg-blue-600">Skills</Link>
-                            <Link to="/experience" className="tab-links rounded-lg px-4 py-2 shadow mr-2 transition-colors duration-200 ease-in-out bg-blue-500 text-white hover:bg-blue-600">Experience</Link>
-                            <Link to="/education" className="tab-links rounded-lg px-4 py-2 shadow mr-2 transition-colors duration-200 ease-in-out bg-blue-500 text-white hover:bg-blue-600">Education</Link>
+                            <Link to="/" className="tab-links flex items-center justify-center w-32 h-12 rounded-md mx-1 bg-stone-300 text-gray-900 hover:text-xl px-3 py-2 transition-all duration-300 border-b-2 border-transparent hover:border-slate-800 focus:outline-none active:bg-slate-800 active:text-white">Skills</Link>
+                            <Link to="/experience" className="tab-links flex items-center justify-center w-32 h-12 text-center rounded-md mx-1 bg-stone-300 text-gray-900 hover:text-xl px-3 py-2 transition-all duration-300 border-b-2 border-transparent hover:border-slate-800 focus:outline-none  active:bg-slate-800 active:text-white">Experience</Link>
+                            <Link to="/education" className="tab-links flex items-center justify-center w-32 h-12 tab-links rounded-md mx-1 bg-stone-300 text-gray-900 hover:text-xl px-3 py-2 transition-all duration-300 border-b-2 border-transparent hover:border-slate-800 focus:outline-none  active:bg-slate-800 active:text-white">Education</Link>
                         </nav>
                     </div>
                     <div

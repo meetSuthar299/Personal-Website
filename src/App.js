@@ -8,6 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 import ResumeDataProvider from './Providers/ResumeDataProvider.js';
 import Home from './Pages/Home.js'
 import Footer from './components/Footer';
+import NavBar from './components/NavBar';
 
 // import './styles/About.css';
 // import './styles/services.css';
@@ -18,9 +19,10 @@ import './styles/style.css';
 
 function App() {
   return (
-    <div className="App" class=" overflow-hidden">
+    <div className="App" class=" overflow-hidden relative">
       <ResumeDataProvider>
-        <Header />
+        {/* <Header /> */}
+        <NavBar/>
         <Home />
         <BrowserRouter>
           <About />
@@ -28,7 +30,7 @@ function App() {
         <Services />
         {/* <Portfolio /> */}
         <Contact />
-        {/* <Footer /> */}
+        <Footer />
       </ResumeDataProvider>
     </div>
   );

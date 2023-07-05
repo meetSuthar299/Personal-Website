@@ -1,18 +1,13 @@
-export default function WEbDevService() {
+export default function WebDevService() {
     return (
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-                <div>
-                    <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                        Brand new
-                    </p>
-                </div>
+        <div className="relative px-4 py-16 md:px-24 lg:py-20" >
+            <div className="max-w-xl mb-10 sm:text-center md:mb-12">
                 <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
                     <span className="relative inline-block">
                         <svg
                             viewBox="0 0 52 24"
                             fill="currentColor"
-                            className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+                            className="absolute top-0 left-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
                         >
                             <defs>
                                 <pattern
@@ -40,7 +35,7 @@ export default function WEbDevService() {
                     accusantium doloremque rem aperiam, eaque ipsa quae.
                 </p>
             </div>
-            <div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
+            <div className="grid max-w-screen-xl gap-8 lg:grid-cols-2 sm:mx-auto">
                 <div className="flex flex-col justify-center">
                     <div className="flex">
                         <div className="mr-4">

@@ -2,8 +2,8 @@ import React from "react";
 
 export const ContenCreationService = () => {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
+    <div className="px-4 py-16 md:px-24 lg:px-8 lg:py-20 relative z-50">
+      <div className="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8 relative">
         <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
           <span className="inline-block mb-1 sm:mb-4">
             Photography and VideoGraphy Services
@@ -11,7 +11,9 @@ export const ContenCreationService = () => {
           <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
         </h2>
         <p className="text-gray-700 lg:text-sm lg:max-w-md">
-          a little Discription ..........
+          Welcome to the captivating world of [Photographer/Videographer's Name] explore my passion for capturing the essence of moments and places, creating stunning visual narratives that transport viewers to extraordinary realms.
+          With a commitment to professionalism and attention to detail, I bring your vision to life, whether it's capturing cherished memories, showcasing nature's beauty, or adding elegance to your living space.
+          Explore my portfolio to witness a diverse range of captivating visuals, where creativity meets technical expertise. Join me on a visual journey that evokes emotions, sparks curiosity, and leaves a lasting impression.
         </p>
       </div>
       <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">

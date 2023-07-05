@@ -72,12 +72,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 shadow-md bg-[rgba(0,0,0,0.48)] backdrop-blur border-black border-2">
       <nav className="flex items-center justify-between px-6 py-4">
-
-        <div className="flex items-center">
-          <Logo />
-        </div>
-
-
+        <Logo />
         <div className="flex items-center">
           <div className="hidden lg:flex lg:gap-x-12">
             <SocualMediaLinks />
@@ -87,7 +82,7 @@ const Header = () => {
         </div>
       </nav>
       {isDropdownOpen && (
-        <div className="md:hidden shadow-md">
+        <div className=" shadow-md">
           <SocualMediaLinks />
           <MenuLinks />
         </div>
