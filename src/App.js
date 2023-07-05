@@ -19,7 +19,7 @@ import './styles/style.css';
 
 function App() {
   return (
-    <div className="App" class=" overflow-hidden relative">
+    <div className="App" class=" overflow-hidden">
       <ResumeDataProvider>
         {/* <Header /> */}
         <NavBar/>
