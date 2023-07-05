@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 export default function Footer() {
     return (
-        <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className=" px-4 py-12 mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen-2xl md:px-28 lg:px-8 lg:py-20 relative z-10 bg-[rgba(0,0,0,0.64)] backdrop-blur border-black mb-10 rounded-b-3xl">
             <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
                 <Logo />
                 <div>

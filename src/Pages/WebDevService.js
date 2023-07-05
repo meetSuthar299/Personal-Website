@@ -1,8 +1,8 @@
 export default function WebDevService() {
     return (
-        <div className="relative px-4 py-16 md:px-24 lg:py-20" >
+        <div className="relative px-4 py-16 md:px-24 lg:py-20 backdrop-blur rounded-3xl" >
             <div className="max-w-xl mb-10 sm:text-center md:mb-12">
-                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+                <h2 className="max-w-lg mb-6 font-sans text-5xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
                     <span className="relative inline-block">
                         <svg
                             viewBox="0 0 52 24"
@@ -26,13 +26,14 @@ export default function WebDevService() {
                                 height="24"
                             />
                         </svg>
-                        <span className="relative">The</span>
+                        <span className="relative"></span>
                     </span>{' '}
-                    quick, brown fox jumps over a lazy dog
+                    Web Application Development
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque rem aperiam, eaque ipsa quae.
+                <p className="text-base text-white md:text-lg">
+                    Welcome to my freelance web development service. I specialize in creating seamless and customized web
+                    applications that bring your unique vision to life. Let's transform your ideas into captivating
+                    digital experiences.
                 </p>
             </div>
             <div className="grid max-w-screen-xl gap-8 lg:grid-cols-2 sm:mx-auto">
@@ -56,13 +57,13 @@ export default function WebDevService() {
                             </div>
                         </div>
                         <div>
-                            <h6 className="mb-2 font-semibold leading-5">
-                                They urge you to put down
+                            <h6 className="mb-2 font-semibold leading-5 text-white text-2xl pb-3">
+                                Expert Web Application Development
                             </h6>
-                            <p className="text-sm text-gray-900">
-                                Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter
-                                flail 180 berm. Half-cab camel back ollie transition ledge Wes
-                                Humpston 1080.
+                            <p className="text-sm text-white">
+                                As a freelance web application developer, I specialize in creating robust and dynamic web applications.
+                                With expertise in technologies such as JavaScript, ReactJS, HTML, CSS, and more, I deliver tailored solutions
+                                that meet the unique needs of my clients.
                             </p>
                             <hr className="w-full my-6 border-gray-300" />
                         </div>
@@ -86,13 +87,13 @@ export default function WebDevService() {
                             </div>
                         </div>
                         <div>
-                            <h6 className="mb-2 font-semibold leading-5">
-                                The powerless in a world
+                            <h6 className="mb-2 font-semibold leading-5 text-2xl text-white pb-3">
+                                Seamless User Experience
                             </h6>
-                            <p className="text-sm text-gray-900">
-                                The first mate and his Skipper too will do their very best to
-                                make the others comfortable in their tropic island nest. Michael
-                                Knight a young loner.
+                            <p className="text-sm text-white">
+                                I prioritize providing a seamless and intuitive user experience in all the web applications I develop.
+                                From responsive designs to optimized performance, I ensure that users can effortlessly navigate and interact
+                                with the application, resulting in enhanced user satisfaction and engagement.
                             </p>
                             <hr className="w-full my-6 border-gray-300" />
                         </div>
@@ -116,13 +117,14 @@ export default function WebDevService() {
                             </div>
                         </div>
                         <div>
-                            <h6 className="mb-2 font-semibold leading-5">
-                                Tell them I hate them
+                            <h6 className="mb-2 font-semibold leading-5 text-2xl text-white pb-3">
+                                Customized Solutions
                             </h6>
-                            <p className="text-sm text-gray-900">
-                                Chase ball of string eat plants, meow, and throw up because I
-                                ate plants going to catch the red dot today going to catch the
-                                red dot today. I could pee on this if I had the energy.
+                            <p className="text-sm text-white">
+                                I understand that every client has specific requirements and goals for their web application.
+                                I offer personalized solutions by closely collaborating with clients, understanding their needs,
+                                and delivering custom-built web applications that align with their vision and objectives. With a strong
+                                focus on clean code and scalability, I create applications that are flexible and adaptable to future growth.
                             </p>
                         </div>
                     </div>

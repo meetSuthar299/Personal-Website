@@ -1,24 +1,39 @@
-import React from "react";
-import ItemCard from "../components/ItemCard";
-import ItemCardList from "../components/ItemCardList";
+import { useState, useEffect, useRef } from 'react';
+import ItemCard from './ItemCard';
 
-export const ContenCreationService = () => {
+function ItemCardList() {
+  const scrollContainerRef = useRef(null);
+  const [scrollX, setScrollX] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollX(scrollContainerRef.current.scrollLeft);
+    };
+
+    scrollContainerRef.current.addEventListener('scroll', handleScroll);
+
+    return () => {
+      scrollContainerRef.current.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="px-4 py-16 md:px-24 lg:px-8 lg:py-20 relative z-50 backdrop-blur rounded-3xl">
-      <div className="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8 relative">
-        <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none md:mb-6 group">
-          <span className="inline-block mb-1 sm:mb-4 text-4xl">
-            Photography and Videography Services
-          </span>
-          <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
-        </h2>
-        <p className="text-white lg:text-sm lg:max-w-2xl p-4">
-          Welcome to MK Moments, where I offer a range of professional photography services. From capturing timeless portraits and breathtaking landscapes to showcasing architectural wonders and stunning automotive shots, I bring your vision to life through captivating imagery. Explore my portfolio and discover the artistry behind MK Moments on Instagram: @M.k.moments. Let's create unforgettable moments together.
-        </p>
-      </div>
-      <ItemCardList />
-      {/* <div className="mb-8 overflow-x-auto">
-        <div className="flex flex-nowrap justify-start">
+    <div className="mb-8 overflow-x-auto relative">
+      <div className="flex flex-nowrap justify-start shadow-inner">
+        <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
+          <button
+            className="px-2 py-1 bg-gray-200 text-gray-500 rounded-l focus:outline-none"
+            onClick={() => {
+              scrollContainerRef.current.scrollBy({
+                left: -200,
+                behavior: 'smooth',
+              });
+            }}
+          >
+            &lt;
+          </button>
+        </div>
+        <div className="relative flex" id="scrollContainer" ref={scrollContainerRef}>
           <ItemCard
             imgSrc="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
             firstP="Event Photography"
@@ -50,23 +65,22 @@ export const ContenCreationService = () => {
             secondP="Offer high-quality prints of photographs along with custom framing options. Provide clients with a complete service, allowing them to display their favorite images as stunning pieces of art."
           />
         </div>
-      </div> */}
-      <div className="text-center">
-        <a
-          href="/"
-          aria-label=""
-          className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 text-white"
-        >
-          View gallery
-          <svg
-            className="inline-block w-3 ml-2"
-            fill="currentColor"
-            viewBox="0 0 12 12"
+        <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
+          <button
+            className="px-2 py-1 bg-gray-200 text-gray-500 rounded-r focus:outline-none"
+            onClick={() => {
+              scrollContainerRef.current.scrollBy({
+                left: 200,
+                behavior: 'smooth',
+              });
+            }}
           >
-            <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-          </svg>
-        </a>
+            &gt;
+          </button>
+        </div>
       </div>
     </div>
   );
-};
+}
+
+export default ItemCardList;

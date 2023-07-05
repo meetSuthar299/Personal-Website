@@ -17,8 +17,8 @@ const Education = () => {
                         <div>
                             <h3 className="text-xl font-semibold mb-2">{education.degree}</h3>
                             <p className="text-lg mb-2">{education.university}</p>
-                            <p className="text-gray-600 mb-1">Completion Date: {education.completionDate}</p>
-                            <p className="text-gray-600 mb-1">Grade: {education.grade}</p>
+                            <p className="mb-1">Completion Date: {education.completionDate}</p>
+                            <p className="mb-1">Grade: {education.grade}</p>
                         </div>
                     </div>
                 ))}
@@ -29,7 +29,7 @@ const Education = () => {
                         <ul className="mb-2">
                             {Object.values(resumeData[0].certifications[0]).map(
                                 (certification, index) => (
-                                    <li key={index} className="text-gray-600 mb-1">
+                                    <li key={index} className="mb-1">
                                         {certification[0].name} | Completion Date: {certification[0].completionDate}
                                     </li>
                                 )

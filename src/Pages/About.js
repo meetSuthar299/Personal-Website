@@ -51,7 +51,7 @@ const About = () => {
             setMarginTop(screenHeight);
         };
 
-        handleResize(); // Set initial margin top
+        handleResize();
 
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
@@ -60,12 +60,13 @@ const About = () => {
 
 
     return (
-        <div id="about" className=" relative mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen-2xl md:px-26 lg:px-8 mt-screen z-20 bg-gray-200" style={{ marginTop }}>
-            <div className="flex flex-col lg:flex-row p-10 bg-gray-200">
-                <div className='flex justify-center p-6'>
-                    <img src={UserImg} alt="Meet Suthar" className="max-h-96 max-w-fit rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105" />
+        <div id="about" className=" relative mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen-2xl md:px-26 lg:px-8 mt-screen z-10 bg-[rgba(0,0,0,0.64)] backdrop-blur border-black rounded-t-3xl text-white" style={{ marginTop }}>
+            <div className="flex flex-col lg:flex-row p-10">
+                <div className='flex justify-center p-6 rounded-3xl'>
+                    <img src={UserImg} alt="Meet Suthar" className="max-h-96 max-w-fit rounded-xl shadow-2xl transition-transform duration-500 ease-in-out transform hover:scale-105" />
                 </div>
-                <div id="aboutInfo" className="about-info rounded-lg shadow-lg mt-8 lg:mt-0 lg:ml-8 p-6 border border-gray-300 max-w-5xl">
+
+                <div id="aboutInfo" className="about-info rounded-2xl shadow-2xl mt-8 lg:mt-0 lg:ml-8 p-8 max-w-5xl backdrop-blur border-black">
                     <div
                         id="aboutInfoTitle"
                         className="opacity-0 transform transition-opacity duration-500 delay-500 ease-in-out"

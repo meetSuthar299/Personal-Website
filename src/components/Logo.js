@@ -18,11 +18,11 @@ export default function Logo() {
                 stroke="currentColor"
                 fill="none"
             >
-                <rect x="3" y="1" width="7" height="12" className="text-white" />
-                <rect x="3" y="17" width="7" height="6" className="text-white" />
-                <rect x="14" y="1" width="7" height="6" className="text-white" />
-                <rect x="14" y="11" width="7" height="12" className="text-white" />
+                <rect x="3" y="1" width="5" height="18" className="text-white" />
+                <rect x="8" y="7" width="5" height="12" className="text-white" />
+                <rect x="13" y="1" width="5" height="18" className="text-white" />
             </svg>
+
             <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
                 Meet Suthar
             </span>

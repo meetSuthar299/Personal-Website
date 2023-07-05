@@ -11,11 +11,11 @@ export default function NavBar() {
             smooth={true}
             duration={1000}
             offset={-100}
-            className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-        >
+            className="text-lg text-white transition-all duration-200 ease-in-out hover:text-teal-accent-400 hover:pb-1 hover:scale-105 hover:shadow-lg cursor-pointer hover:border-b-2"
+            >
             {children}
         </Link>
-    );  
+    );
     return (
         <div class=" fixed w-full top-0 z-50 shadow-md bg-[rgba(0,0,0,0.48)] backdrop-blur border-black border-b-2">
             <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -73,20 +73,20 @@ export default function NavBar() {
                                                         fill="currentColor"
                                                         d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
                                                     />
-                                                </svg> 
+                                                </svg>
                                             </button>
                                         </div>
                                     </div>
                                     <nav>
                                         <ul class="space-y-4">
                                             <li>
-                                            <NavLink to="about">About</NavLink>
+                                                <NavLink to="about">About</NavLink>
                                             </li>
                                             <li>
-                                            <NavLink to="services">What I do</NavLink>
+                                                <NavLink to="services">What I do</NavLink>
                                             </li>
                                             <li>
-                                            <NavLink to="contact">Contact Me</NavLink>
+                                                <NavLink to="contact">Contact Me</NavLink>
                                             </li>
                                         </ul>
                                     </nav>

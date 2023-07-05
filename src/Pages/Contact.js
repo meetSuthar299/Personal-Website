@@ -1,7 +1,7 @@
 function Contact() {
     return (
-        <div id="contact" class="relative flex flex-wrap px-4 py-16 mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen md:px-25 lg:px-8 lg:py-20">
-            <div className="container">
+        <div id="contact" className=" px-4 py-12 mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen-2xl md:px-28 lg:px-8 lg:py-20 relative z-10 bg-[rgba(0,0,0,0.64)] backdrop-blur border-black">
+            
                 <div className="row">
                     <div className="contact-left">
                         <h1 className="sub-title">Contact Me</h1>
@@ -23,7 +23,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
-        </div> 
+       
 
       
     );
