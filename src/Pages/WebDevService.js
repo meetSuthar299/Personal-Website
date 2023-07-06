@@ -1,3 +1,7 @@
+import webDevImg1 from "../Assets/images/webDevImg-1.jpg"
+import webDevImg2 from "../Assets/images/webDevImg-2.png"
+import webDevImg3 from "../Assets/images/webDevImg-3.png"
+
 export default function WebDevService() {
     return (
         <div className="relative px-4 py-16 md:px-24 lg:py-20 backdrop-blur rounded-3xl" >
@@ -132,17 +136,17 @@ export default function WebDevService() {
                 <div className="grid grid-cols-2 gap-5">
                     <img
                         className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
-                        src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                        src={webDevImg2}
                         alt=""
                     />
                     <img
                         className="object-cover w-full h-48 rounded shadow-lg"
-                        src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                        src={webDevImg1}
                         alt=""
                     />
                     <img
                         className="object-cover w-full h-48 rounded shadow-lg"
-                        src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                        src={webDevImg3}
                         alt=""
                     />
                 </div>

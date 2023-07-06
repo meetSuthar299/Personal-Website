@@ -1,28 +1,19 @@
 import React, { useState } from 'react';
 import Logo from './Logo';
-import { Link } from 'react-scroll';
+import NavLink from './NavLink';
+import SocualMediaLinks from './SocialmediaLinks';
 
 export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const NavLink = ({ to, children }) => (
-        <Link
-            to={to}
-            smooth={true}
-            duration={1000}
-            offset={-100}
-            className="text-lg text-white transition-all duration-200 ease-in-out hover:text-teal-accent-400 hover:pb-1 hover:scale-105 hover:shadow-lg cursor-pointer hover:border-b-2"
-            >
-            {children}
-        </Link>
-    );
+   
     return (
         <div class=" fixed w-full top-0 z-50 shadow-md bg-[rgba(0,0,0,0.48)] backdrop-blur border-black border-b-2">
             <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                 <div class="relative flex grid items-center grid-cols-2 lg:grid-cols-3">
                     <ul class="flex items-center hidden space-x-8 lg:flex">
                         <li>
-                            <NavLink to="about">About</NavLink>
+                            <NavLink to="about">About Me</NavLink>
                         </li>
                         <li>
                             <NavLink to="services">What I do</NavLink>
@@ -33,6 +24,7 @@ export default function NavBar() {
                     </ul>
                     <Logo />
                     <div class="ml-auto lg:hidden">
+                        
                         <button
                             aria-label="Open Menu"
                             title="Open Menu"
@@ -80,7 +72,7 @@ export default function NavBar() {
                                     <nav>
                                         <ul class="space-y-4">
                                             <li>
-                                                <NavLink to="about">About</NavLink>
+                                                <NavLink to="about">About Me</NavLink>
                                             </li>
                                             <li>
                                                 <NavLink to="services">What I do</NavLink>
@@ -93,6 +85,9 @@ export default function NavBar() {
                                 </div>
                             </div>
                         )}
+                    </div>
+                    <div className='ml-auto hidden lg:flex'>
+                        <SocualMediaLinks />
                     </div>
                 </div>
             </div>

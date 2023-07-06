@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 export default function Logo() {
     return (
-        <a
-            href
-            aria-label="Go home"
-            title="Meet Suthar"
-            className="inline-flex items-center lg:mx-auto"
+        <Link
+            to={"top"}
+            smooth={true}
+            duration={1000}
+            offset={-100}
+            className="inline-flex items-center lg:mx-auto cursor-pointer"
         >
             <svg
                 className="w-8 text-deep-purple-accent-400"
@@ -26,6 +28,6 @@ export default function Logo() {
             <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
                 Meet Suthar
             </span>
-        </a>
+        </Link>
     )
 }

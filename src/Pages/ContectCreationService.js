@@ -2,6 +2,7 @@ import React from "react";
 import ItemCard from "../components/ItemCard";
 import ItemCardList from "../components/ItemCardList";
 
+
 export const ContenCreationService = () => {
   return (
     <div className="px-4 py-16 md:px-24 lg:px-8 lg:py-20 relative z-50 backdrop-blur rounded-3xl">
@@ -12,52 +13,18 @@ export const ContenCreationService = () => {
           </span>
           <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
         </h2>
-        <p className="text-white lg:text-sm lg:max-w-2xl p-4">
-          Welcome to MK Moments, where I offer a range of professional photography services. From capturing timeless portraits and breathtaking landscapes to showcasing architectural wonders and stunning automotive shots, I bring your vision to life through captivating imagery. Explore my portfolio and discover the artistry behind MK Moments on Instagram: @M.k.moments. Let's create unforgettable moments together.
+        <p className="text-white lg:text-lg lg:max-w-2xl p-4">
+          Welcome to MK Moments, where I offer a range of professional photography services. From capturing timeless portraits and breathtaking landscapes to showcasing architectural wonders and stunning automotive shots, I bring your vision to life through captivating imagery.
         </p>
       </div>
       <ItemCardList />
-      {/* <div className="mb-8 overflow-x-auto">
-        <div className="flex flex-nowrap justify-start">
-          <ItemCard
-            imgSrc="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-            firstP="Event Photography"
-            secondP="Preserve the special moments of weddings, parties, conferences, and other occasions with professional event photography services. From candid shots to capturing the ambiance, I ensure every important detail is beautifully documented."
-          />
-          <ItemCard
-            imgSrc="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-            firstP="Portrait Photography"
-            secondP="Capture the essence and personality of individuals, families, and couples through stunning portrait sessions that create cherished memories."
-          />
-          <ItemCard
-            imgSrc="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-            firstP="Commercial Photography"
-            secondP="Provide high-quality images for businesses, including product photography, corporate headshots, and branding visuals. Create captivating visuals that effectively represent your brand and enhance your marketing efforts."
-          />
-          <ItemCard
-            imgSrc="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-            firstP="Automotive Photography"
-            secondP="Specialize in capturing the elegance, power, and detail of performance cars. From sleek sports cars to vintage classics, I create dynamic images that showcase the unique personality of each vehicle."
-          />
-          <ItemCard
-            imgSrc="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-            firstP="Photo Editing and Retouching"
-            secondP="Provide professional photo editing and retouching services to enhance the visual appeal and quality of images. From color correction to removing imperfections, I ensure the final images meet the highest standards."
-          />
-          <ItemCard
-            imgSrc="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-            firstP="Photo Prints and Custom Framing"
-            secondP="Offer high-quality prints of photographs along with custom framing options. Provide clients with a complete service, allowing them to display their favorite images as stunning pieces of art."
-          />
-        </div>
-      </div> */}
       <div className="text-center">
         <a
-          href="/"
+          href="https://www.instagram.com/m.k.moments/?hl=en"
           aria-label=""
-          className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 text-white"
+          className="text-lg text-white transition-all duration-200 ease-in-out hover:text-teal-accent-400 hover:pb-1 hover:scale-105 hover:shadow-lg cursor-pointer hover:border-b-2"
         >
-          View gallery
+          Explore my portfolio Instagram
           <svg
             className="inline-block w-3 ml-2"
             fill="currentColor"
