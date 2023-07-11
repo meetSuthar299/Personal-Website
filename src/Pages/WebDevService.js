@@ -4,7 +4,7 @@ import webDevImg3 from "../Assets/images/webDevImg-3.png"
 
 export default function WebDevService() {
     return (
-        <div className="relative px-4 py-16 md:px-24 lg:py-20 backdrop-blur rounded-3xl" >
+        <div className="relative px-4 py-24 lg:py-20 backdrop-blur rounded-3xl bg-[rgba(46,46,46,0.69)]" >
             <div className="max-w-xl mb-10 sm:text-center md:mb-12">
                 <h2 className="max-w-lg mb-6 font-sans text-5xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
                     <span className="relative inline-block">
@@ -34,11 +34,6 @@ export default function WebDevService() {
                     </span>{' '}
                     Web Application Development
                 </h2>
-                <p className="text-base text-white md:text-lg">
-                    Welcome to my freelance web development service. I specialize in creating seamless and customized web
-                    applications that bring your unique vision to life. Let's transform your ideas into captivating
-                    digital experiences.
-                </p>
             </div>
             <div className="grid max-w-screen-xl gap-8 lg:grid-cols-2 sm:mx-auto">
                 <div className="flex flex-col justify-center">
@@ -65,9 +60,9 @@ export default function WebDevService() {
                                 Expert Web Application Development
                             </h6>
                             <p className="text-sm text-white">
-                                As a freelance web application developer, I specialize in creating robust and dynamic web applications.
-                                With expertise in technologies such as JavaScript, ReactJS, HTML, CSS, and more, I deliver tailored solutions
-                                that meet the unique needs of my clients.
+                                Having a solid background in computer science, my enthusiasm lies in the field of web design and development,
+                                with a keen interest in mobile app development. As I grow as a developer, my ultimate goal is to write clean
+                                and readable code for every software solution.
                             </p>
                             <hr className="w-full my-6 border-gray-300" />
                         </div>
@@ -95,9 +90,10 @@ export default function WebDevService() {
                                 Seamless User Experience
                             </h6>
                             <p className="text-sm text-white">
+                                Design encompasses the internal functionality of a product as well as the overall user experience.
                                 I prioritize providing a seamless and intuitive user experience in all the web applications I develop.
                                 From responsive designs to optimized performance, I ensure that users can effortlessly navigate and interact
-                                with the application, resulting in enhanced user satisfaction and engagement.
+                                with the application.
                             </p>
                             <hr className="w-full my-6 border-gray-300" />
                         </div>
@@ -125,9 +121,8 @@ export default function WebDevService() {
                                 Customized Solutions
                             </h6>
                             <p className="text-sm text-white">
-                                I understand that every client has specific requirements and goals for their web application.
                                 I offer personalized solutions by closely collaborating with clients, understanding their needs,
-                                and delivering custom-built web applications that align with their vision and objectives. With a strong
+                                and delivering custom-built web applications with custom CSS designs that align with their vision and objectives. With a strong
                                 focus on clean code and scalability, I create applications that are flexible and adaptable to future growth.
                             </p>
                         </div>
@@ -135,17 +130,17 @@ export default function WebDevService() {
                 </div>
                 <div className="grid grid-cols-2 gap-5">
                     <img
-                        className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
+                        className="object-cover w-full h-56 col-span-2 rounded-xl shadow-lg"
                         src={webDevImg2}
                         alt=""
                     />
                     <img
-                        className="object-cover w-full h-48 rounded shadow-lg"
+                        className="object-cover w-full h-48 rounded-xl shadow-lg"
                         src={webDevImg1}
                         alt=""
                     />
                     <img
-                        className="object-cover w-full h-48 rounded shadow-lg"
+                        className="object-cover w-full h-48 rounded-xl shadow-lg"
                         src={webDevImg3}
                         alt=""
                     />

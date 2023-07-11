@@ -6,7 +6,7 @@ const data = [
     {
       name: "Meet Suthar",
       email: "meetsuthar299@gmail.com",
-      aboutMe: "Highly motivated recent graduate of Computer Information Systems with over 3 years of corporate work experience as an Application Development and Support Intern and IT Operations Lead Systems Administrator. Passionate software developer with a strong interest in web development. Seeking Developer Opportunities to leverage my proficiency in JavaScript/ES6, and React.",
+      aboutMe: "I'm a web developer based in Calgary, Canada, with a passion for front-end development and design. I love combining creativity with technology to craft visually stunning and engaging websites. With a strong foundation in HTML, CSS, and JavaScript, I enjoy transforming complex ideas into clean and intuitive designs.",
       address: [{
         city: "Calgary",
         country: "Canada",
@@ -53,7 +53,7 @@ const data = [
         11: "MongoDB",
         12: "GitHub",
         13: "Jira",
-        14: "FireBase"
+        14: "FireBase" 
       }],
       experience: [{
         1: [{

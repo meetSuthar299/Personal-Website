@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from 'react';
 import ItemCard from './ItemCard';
 import portraitImg from "../Assets/images/portrait-img.jpg"
 import printImg from "../Assets/images/print-img.jpg"
@@ -13,7 +12,7 @@ function ItemCardList() {
                 <ItemCard
                     imgSrc={eventImg}
                     firstP="Event Photography"
-                    secondP="Preserve the special moments of weddings, parties, conferences, and other occasions with professional event photography services. From candid shots to capturing the ambiance, I ensure every important detail is beautifully documented."
+                    secondP="Preserve your special moments from weddings, parties, conferences, and other occasions with professional event photography services. From candid shots to capturing the ambiance, I ensure every important detail is beautifully documented."
                 />
                 <ItemCard
                     imgSrc={portraitImg}
@@ -38,7 +37,7 @@ function ItemCardList() {
                 <ItemCard
                     imgSrc={printImg}
                     firstP="Photo Prints and Custom Framing"
-                    secondP="Offer high-quality prints of photographs along with custom framing options. Provide clients with a complete service, allowing them to display their favorite images as stunning pieces of art."
+                    secondP="I offer high-quality prints of photographs along with custom framing options. Providing clients with a complete service, allowing them to display their favorite images as stunning pieces of art."
                 />
         </div>
     );
