@@ -5,7 +5,7 @@ import { FaImages } from 'react-icons/fa';
 
 export const ContenCreationService = () => {
   return (
-    <div className="px-4 py-16 md:px-24 lg:px-8 lg:py-20 relative z-50 backdrop-blur rounded-3xl">
+    <div className="px-4 py-16 md:px-24 lg:px-8 lg:py-20 relative z-50 backdrop-blur rounded-3xl bg-[rgba(0,0,0,0.53)]">
       <div className="w-fit mb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
           <h2 className="max-w-lg mb-6 font-sans text-5xl font-bold text-white sm:text-4xl">
@@ -30,7 +30,7 @@ export const ContenCreationService = () => {
           aria-label=""
           className="text-lg text-white transition-all duration-200 ease-in-out hover:text-teal-accent-400 hover:pb-1 hover:scale-105 hover:shadow-lg cursor-pointer hover:border-b-2"
         >
-          Explore my portfolio Instagram
+          Explore my portfolio on Instagram
           <svg
             className="inline-block w-3 ml-2"
             fill="currentColor"

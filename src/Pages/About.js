@@ -67,7 +67,7 @@ const About = () => {
                     <img src={UserImg} alt="Meet Suthar" className="object-cover w-full shadow-2xl transition-all rounded-xl hover:rounded-xl duration-700 hover:scale-105 mr-auto" />
                 </div>
 
-                <div id="aboutInfo" className="about-info rounded-3xl shadow-xl mt-8 lg:mt-0 lg:ml-8 p-8 max-w-5xl backdrop-blur border-black">
+                <div id="aboutInfo" className="about-info rounded-3xl shadow-xl mt-8 lg:mt-0 lg:ml-8 p-8 max-w-5xl backdrop-blur bg-[rgba(0,0,0,0.53)] ">
                     <div
                         id="aboutInfoTitle"
                         className="opacity-0 transform transition-opacity duration-500 delay-500 ease-in-out"

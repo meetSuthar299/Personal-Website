@@ -4,7 +4,7 @@ import webDevImg3 from "../Assets/images/webDevImg-3.png"
 
 export default function WebDevService() {
     return (
-        <div className="relative px-4 py-24 lg:py-20 backdrop-blur rounded-3xl bg-[rgba(46,46,46,0.69)]" >
+        <div className="relative px-4 py-24 lg:py-20 backdrop-blur rounded-3xl bg-[rgba(0,0,0,0.53)]" >
             <div className="max-w-xl mb-10 sm:text-center md:mb-12">
                 <h2 className="max-w-lg mb-6 font-sans text-5xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
                     <span className="relative inline-block">

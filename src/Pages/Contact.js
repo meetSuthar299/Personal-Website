@@ -4,7 +4,7 @@ import SocualMediaLinks from '../components/SocialmediaLinks';
 function Contact() {
     return (
         <div id="contact" className="text-white mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen d:px-8 lg:px-8 relative z-20 bg-[rgba(46,46,46,0.69)] backdrop-blur">
-            <div className="relative px-4 md:px-24 py-20 backdrop-blur rounded-3xl grid max-w-screen-xl gap-8 lg:grid-cols-2 sm:mx-auto bg-[rgba(46,46,46,0.69)]">
+            <div className="relative px-4 md:px-24 py-20 backdrop-blur rounded-3xl grid max-w-screen-xl gap-8 lg:grid-cols-2 sm:mx-auto bg-[rgba(0,0,0,0.53)]">
                 <div className='flex flex-col justify-center'>
                     <h1 className="mb-10 font-sans text-3xl font-bold text-white sm:text-4xl">
                         Let's Connect!
