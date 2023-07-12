@@ -1,6 +1,6 @@
 {
-  "short_name": "Meet Suthar",
-  "name": "Meet Suthar Personal Webite",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
