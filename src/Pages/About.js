@@ -90,9 +90,9 @@ const About = () => {
                         ref={aboutTabsRef}
                     >
                         <Routes>
-                            <Route path="skills" element={<Skills />} />
+                            <Route path="/skills" element={<Skills />} />
                             <Route path="/experience" element={<Experience />} />
-                            <Route path="e/education" element={<Education />} />
+                            <Route path="/education" element={<Education />} />
                         </Routes>
                     </div>
                 </div>
