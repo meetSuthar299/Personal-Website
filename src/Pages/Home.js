@@ -16,17 +16,15 @@ const Home = () => {
     const { resumeData } = useResumeDataContext();
 
     return (
-        <div id="home" className="h-screen w-screen flex justify-center items-center py-10 fixed top-0 inset-x-0 z-0 overflow-hidden" >
-
-            {/* <div class ="wave overflow-y-hidden"></div> */}
-            <video muted autoPlay loop class="absolute z-10 w-screen">
+        <div id="home" className="h-screen w-screen flex justify-center items-center fixed top-0 z-0 overflow-hidden" >
+            <video muted autoPlay loop class="absolute w-screen h-screen object-cover overflow-hidden">
                 <source
                     src="./BgVideo.mp4"
                     type="video/mp4"
                 />
                 Your browser does not support the video tag.
             </video>
-            <h1 className="text-4xl text-white font-mono z-10 text-balance p-5 backdrop-blur rounded-lg shadow-2xl border-2 border-black">
+            <h1 className="text-3xl text-white font-mono z-10 text-balance p-5 backdrop-blur rounded-lg shadow-2xl border-2 border-black m-5">
                 {"<h1> Hi I'm "}
                 <span className="text-red-800">
                     <TypingText text={resumeData[0].name + "       "} />

@@ -10,7 +10,7 @@ function ItemCard({ imgSrc, firstP, secondP }) {
                     <p className="mb-4 text-lg font-bold text-gray-100">{firstP}</p>
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center px-6 py-4 transition-opacity duration-200 bg-black bg-opacity- opacity-0 hover:opacity-100 text-center">
-                    <p className="text-lg tracking-wide text-gray-300">{secondP}</p>
+                    <p className="text-sm tracking-wide text-gray-300">{secondP}</p>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ import './styles/style.css';
 
 function App() {
 
-  useEffect(()=>{
+  useEffect(() => {
     const shine = document.querySelector(".shiny");
     if (shine != null) {
       shine.addEventListener("mousemove", (e) => {
@@ -22,20 +22,22 @@ function App() {
       });
     }
   });
-  
+
   return (
-    <div id="main" className="overflow-hidden shiny">
-      <ResumeDataProvider>
-        <div id="top"></div>
-        <NavBar />
-        <Home />
-        <BrowserRouter>
-          <About />
-        </BrowserRouter>
-        <Services />
-        <Contact />
-        <Footer />
-      </ResumeDataProvider>
+    <div id="main" className="overflow-hidden">
+      <div className="overflow-hidden shiny min-h-screen min-w-screen">
+        <ResumeDataProvider>
+          <div id="top"></div>
+          <NavBar />
+          <Home />
+          <BrowserRouter>
+            <About />
+          </BrowserRouter>
+          <Services />
+          <Contact />
+          <Footer />
+        </ResumeDataProvider>
+      </div>
     </div>
   );
 
