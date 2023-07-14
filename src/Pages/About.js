@@ -79,9 +79,9 @@ const About = () => {
                     <hr className="w-full my-6 border-gray-300" />
                     <div>
                         <nav id="AboutTabTitles" className="flex justify-center mt-4 text-center">
-                            <Link to="/Personal-Website/skills" className=" text-lg text-white transition-all duration-200 ease-in-out hover:scale-110 bg-[rgba(255,255,255,0.21)] pr-3 pl-3 mr-1 ml-1 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl w-28 pt-2">Skills</Link>
-                            <Link to="/Personal-Website/experience" className="text-lg text-white transition-all duration-200 ease-in-out hover:scale-110 bg-[rgba(255,255,255,0.21)] pr-3 pl-3 mr-1 ml-1 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl w-28 pt-2">Experience</Link>
-                            <Link to="/Personal-Website/education" className="text-lg text-white transition-all duration-200 ease-in-out hover:scale-110 bg-[rgba(255,255,255,0.21)] pr-3 pl-3 mr-1 ml-1 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl w-28 h-12 pt-2">Education</Link>
+                            <Link to="/skills" className=" text-lg text-white transition-all duration-200 ease-in-out hover:scale-110 bg-[rgba(255,255,255,0.21)] pr-3 pl-3 mr-1 ml-1 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl w-28 pt-2">Skills</Link>
+                            <Link to="/experience" className="text-lg text-white transition-all duration-200 ease-in-out hover:scale-110 bg-[rgba(255,255,255,0.21)] pr-3 pl-3 mr-1 ml-1 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl w-28 pt-2">Experience</Link>
+                            <Link to="/education" className="text-lg text-white transition-all duration-200 ease-in-out hover:scale-110 bg-[rgba(255,255,255,0.21)] pr-3 pl-3 mr-1 ml-1 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl w-28 h-12 pt-2">Education</Link>
                         </nav>
                     </div>
                     <div
@@ -90,9 +90,9 @@ const About = () => {
                         ref={aboutTabsRef}
                     >
                         <Routes>
-                            <Route path="/Personal-Website/skills" element={<Skills />} />
-                            <Route path="/Personal-Website/experience" element={<Experience />} />
-                            <Route path="/Personal-Website/education" element={<Education />} />
+                            <Route path="skills" element={<Skills />} />
+                            <Route path="/experience" element={<Experience />} />
+                            <Route path="e/education" element={<Education />} />
                         </Routes>
                     </div>
                 </div>
