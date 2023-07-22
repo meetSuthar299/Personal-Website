@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2330be26.css",
-    "main.js": "/static/js/main.e2921029.js",
+    "main.css": "/static/css/main.2e0ffa11.css",
+    "main.js": "/static/js/main.172c9402.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/auto-img.jpg": "/static/media/auto-img.2aa3a3368b06568a64c5.jpg",
     "static/media/webDevImg-1.jpg": "/static/media/webDevImg-1.e6df4d3c8e6596af72d0.jpg",
@@ -9,17 +9,17 @@
     "static/media/portrait-img.jpg": "/static/media/portrait-img.7d7fceb58bd5f5623282.jpg",
     "static/media/event-img.jpg": "/static/media/event-img.d0c973b2bc2eb4b111e3.jpg",
     "static/media/webDevImg-3.png": "/static/media/webDevImg-3.9d70c2239b9cefe78a18.png",
-    "static/media/webDevImg-2.png": "/static/media/webDevImg-2.893b3d33cde47ed0012c.png",
+    "static/media/webDevImg-2.png": "/static/media/webDevImg-2.22338632469a8180985c.png",
     "static/media/meetPic.jpg": "/static/media/meetPic.709ee7df26568e476bed.jpg",
     "static/media/Commercia-Img.jpg": "/static/media/Commercia-Img.2fdd65d6c5bc417f752d.jpg",
     "static/media/print-img.jpg": "/static/media/print-img.6bc2c4a5cfcd1ca45713.jpg",
     "index.html": "/index.html",
-    "main.2330be26.css.map": "/static/css/main.2330be26.css.map",
-    "main.e2921029.js.map": "/static/js/main.e2921029.js.map",
+    "main.2e0ffa11.css.map": "/static/css/main.2e0ffa11.css.map",
+    "main.172c9402.js.map": "/static/js/main.172c9402.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2330be26.css",
-    "static/js/main.e2921029.js"
+    "static/css/main.2e0ffa11.css",
+    "static/js/main.172c9402.js"
   ]
 }
