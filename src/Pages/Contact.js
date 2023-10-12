@@ -15,9 +15,6 @@ function Contact() {
                         <p>meetsuthar299@gmail.com</p>
                     </div>
                     <SocualMediaLinks/>
-                    <a href="./MeetSutharResume2023.pdf" className="mt-5 w-60 text-lg text-white text-center transition-all duration-200 ease-in-out hover:scale-110 bg-[rgba(255,255,255,0.21)] px-3 py-2 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl" download>
-                        Download Resume
-                    </a>
                 </div>
                 <div className=" p-4 text-xl">
                     <form method="POST" action="">
