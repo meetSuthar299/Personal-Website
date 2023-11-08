@@ -1,6 +1,7 @@
 import webDevImg1 from "../Assets/images/webDevImg-1.jpg"
 import webDevImg2 from "../Assets/images/webDevImg-2.png"
 import webDevImg3 from "../Assets/images/webDevImg-3.png"
+import React from 'react';
 
 export default function WebDevService() {
     return (

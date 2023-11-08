@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Routes, Route, Link } from "react-router-dom";
 import Skills from "../components/Skills";
 import Education from '../components/Education';
 import Experience from '../components/Experience';
 import { useResumeDataContext } from "../Providers/ResumeDataProvider";
-import UserImg from "../Assets/images/meetPic.jpg"
+import UserImg from "../Assets/images/meetPic.jpg";
 import '../styles/style.css';
 
 const About = () => {
@@ -58,7 +57,20 @@ const About = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    const [activeTab, setActiveTab] = useState('');
 
+    const handleTabClick = (tab) => {
+        setActiveTab(tab);
+    };
+
+    let tabContent;
+    if (activeTab === 'skills') {
+        tabContent = <Skills />;
+    } else if (activeTab === 'experience') {
+        tabContent = <Experience />;
+    } else if (activeTab === 'education') {
+        tabContent = <Education />;
+    }
 
     return (
         <div id="about" className="relative mx-auto threeDWrap sm:max-w-2xl md:max-w-full lg:max-w-screen md:px-26 lg:px-8 mt-screen z-10 bg-[rgba(46,46,46,0.69)] backdrop-blur border-black rounded-t-3xl text-white" style={{ marginTop }}>
@@ -75,13 +87,34 @@ const About = () => {
                     >
                         <h1 className="text-4xl pb-4">About Me</h1>
                         <p className='pb-4 text-lg'>{resumeData[0].aboutMe}</p>
+                        <a href="./MeetSutharResume2023.pdf" className="mt-5 w-60 text-lg text-white text-center transition-all duration-200 ease-in-out hover:scale-110 bg-[rgba(255,255,255,0.21)] px-3 py-2 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl p-5" download>
+                            Download Resume
+                        </a>
                     </div>
                     <hr className="w-full my-6 border-gray-300" />
                     <div>
                         <nav id="AboutTabTitles" className="flex justify-center mt-4 text-center">
-                            <Link to="/skills" className=" text-lg text-white transition-all duration-200 ease-in-out hover:scale-110 bg-[rgba(255,255,255,0.21)] pr-3 pl-3 mr-1 ml-1 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl w-28 pt-2">Skills</Link>
-                            <Link to="/experience" className="text-lg text-white transition-all duration-200 ease-in-out hover:scale-110 bg-[rgba(255,255,255,0.21)] pr-3 pl-3 mr-1 ml-1 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl w-28 pt-2">Experience</Link>
-                            <Link to="/education" className="text-lg text-white transition-all duration-200 ease-in-out hover:scale-110 bg-[rgba(255,255,255,0.21)] pr-3 pl-3 mr-1 ml-1 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl w-28 h-12 pt-2">Education</Link>
+                            <button
+                                className={`text-lg text-white transition-all duration-200 ease-in-out hover:scale-110 ${activeTab === 'skills' ? 'bg-[rgba(255,255,255,0.21)]' : ''
+                                    } pr-3 pl-3 mr-1 ml-1 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl w-28 pt-2`}
+                                onClick={() => handleTabClick('skills')}
+                            >
+                                Skills
+                            </button>
+                            <button
+                                className={`text-lg text-white transition-all duration-200 ease-in-out hover:scale-110 ${activeTab === 'experience' ? 'bg-[rgba(255,255,255,0.21)]' : ''
+                                    } pr-3 pl-3 mr-1 ml-1 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl w-28 pt-2`}
+                                onClick={() => handleTabClick('experience')}
+                            >
+                                Experience
+                            </button>
+                            <button
+                                className={`text-lg text-white transition-all duration-200 ease-in-out hover:scale-110 ${activeTab === 'education' ? 'bg-[rgba(255,255,255,0.21)]' : ''
+                                    } pr-3 pl-3 mr-1 ml-1 rounded-xl focus:bg-[rgba(139,139,139,0.21)] hover:shadow-2xl w-28 h-12 pt-2`}
+                                onClick={() => handleTabClick('education')}
+                            >
+                                Education
+                            </button>
                         </nav>
                     </div>
                     <div
@@ -89,11 +122,7 @@ const About = () => {
                         className="mt-8 opacity-0 transform transition-opacity duration-500 delay-500 ease-in-out"
                         ref={aboutTabsRef}
                     >
-                        <Routes>
-                            <Route path="/skills" element={<Skills />} />
-                            <Route path="/experience" element={<Experience />} />
-                            <Route path="/education" element={<Education />} />
-                        </Routes>
+                        {tabContent}
                     </div>
                 </div>
             </div>

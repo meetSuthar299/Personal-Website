@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import { FaInstagram, FaGithub, FaLinkedin} from 'react-icons/fa';
 
 function SocualMediaLinks() {

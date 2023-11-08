@@ -17,7 +17,7 @@ const Home = () => {
 
     return (
         <div id="home" className="h-screen w-screen flex justify-center items-center fixed top-0 z-0 overflow-hidden" >
-            <video muted autoPlay loop class="absolute w-screen h-screen object-cover overflow-hidden">
+            <video muted autoPlay loop className="absolute w-screen h-screen object-cover overflow-hidden">
                 <source
                     src="./BgVideo.mp4"
                     type="video/mp4"

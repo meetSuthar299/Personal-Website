@@ -1,3 +1,4 @@
+import React from 'react';
 import ItemCard from './ItemCard';
 import portraitImg from "../Assets/images/portrait-img.jpg"
 import printImg from "../Assets/images/print-img.jpg"

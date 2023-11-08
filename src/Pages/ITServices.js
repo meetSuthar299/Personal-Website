@@ -1,3 +1,4 @@
+import React from 'react';
 export const ITServices = () => {
     return (
       <div className="px-4 py-16md:px-24 lg:px-8 lg:py-20">

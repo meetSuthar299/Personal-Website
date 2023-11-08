@@ -6,7 +6,7 @@ const data = [
     {
       name: "Meet Suthar",
       email: "meetsuthar299@gmail.com",
-      aboutMe: "I'm a web developer based in Calgary, Canada, with a passion for front-end development and design. I love combining creativity with technology to craft visually stunning and engaging websites. With a strong foundation in HTML, CSS, and JavaScript, I enjoy transforming complex ideas into clean and intuitive designs.",
+      aboutMe: "I'm a web developer based in Calgary, Canada, with a passion for Full-Stact Development. I love combining creativity with technology to craft visually stunning and engaging websites and applications. With a strong foundation in HTML, CSS, and JavaScript, I enjoy transforming complex ideas into clean and intuitive designs.",
       address: [{
         city: "Calgary",
         country: "Canada",
@@ -20,7 +20,7 @@ const data = [
         6: "Demonstrated familiarity with testing frameworks and methodologies, including unit testing and integration testing."
       }],
       education: [{
-        degree: "Bachelor of Computer Information Systems - Minor in Business Management",
+        degree: "Bachelor of Computer Information Systems - Minor in Business",
         completionDate: "June 2022",
         university: "Mount Royal University",
         grade: "3.1"
