@@ -1,17 +1,14 @@
-import About from './Pages/About.js';
-import Services from './Pages/Services.js';
-import Contact from './Pages/Contact.js'
+import About from './Pages/About.jsx';
+import Services from './Pages/Services.jsx';
+import Contact from './Pages/Contact.jsx'
 import React, { useEffect } from 'react';
 import { BrowserRouter } from "react-router-dom";
 import ResumeDataProvider from './Providers/ResumeDataProvider.js';
-import Home from './Pages/Home.js'
-import Footer from './components/Footer.js';
-import NavBar from './components/NavBar.js';
-
-import './styles/style.css';
+import Home from './Pages/Home.jsx'
+import Footer from './components/Footer.jsx';
+import NavBar from './components/NavBar.jsx';
 
 function App() {
-
   useEffect(() => {
     const shine = document.querySelector(".shiny");
     if (shine != null) {
@@ -21,7 +18,7 @@ function App() {
         shine.style.setProperty("--y", e.clientY - y);
       });
     }
-  });
+  }, []);
 
   return (
     <div id="main" className="overflow-hidden">
@@ -30,9 +27,7 @@ function App() {
           <div id="top"></div>
           <NavBar />
           <Home />
-          <BrowserRouter>
-            <About />
-          </BrowserRouter>
+          <About />
           <Services />
           <Contact />
           <Footer />
@@ -40,7 +35,5 @@ function App() {
       </div>
     </div>
   );
-
 }
-
 export default App;
