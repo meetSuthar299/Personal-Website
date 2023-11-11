@@ -1,35 +1,37 @@
 import React, { useState } from "react";
-import { FaImages, FaReact, FaReacteurope, FaStripe } from 'react-icons/fa';
+import { FaImages, FaReact, FaReacteurope, FaStripe, FaGithub, FaExternalLinkAlt, FaFigma } from 'react-icons/fa';
 import { SiFirebase, SiRedux } from 'react-icons/si';
+import netflixClone from '../Assets/images/NetflixClone.jpg';
+import homeWard from '../Assets/images/Homeward.jpg';
+import rockPaperScissors from '../Assets/images/rockPaperSc.jpg';
 
 const projectsData = [
     {
         id: 1,
-        title: 'Project 1',
-        description: 'This is the description of Project 1.',
-        image: 'project1.jpg',
-        technologies: ['JavaScript', 'ReactJS', 'TailwindCSS'],
+        title: 'Netflix Clone',
+        description: 'The Netflix clone is a web application built with ReactJS, featuring Firebase authentication, Firestore integration for storing user preferences, Redux for state management, and Stripe for simulated payment processing. It uses the TMDB API to provide a dynamic selection of movies, offering a realistic user experience similar to the actual Netflix platform.',
+        image: netflixClone,
+        technologies: ['JavaScript', 'ReactJS', 'Redux', 'Firebase', 'Stripe'],
+        github:"https://github.com/meetSuthar299/netflix-build",
+        projectLink:"https://meetsuthar299.github.io/netflix-build/#/",
     },
     {
         id: 2,
-        title: 'Project 2',
-        description: 'This is the description of Project 2.',
-        image: 'project2.jpg',
+        title: 'Homeward-App',
+        description: 'Homeward is a React Native expo-managed mobile application for finding lost pets. Users may create posts to spread the word and get help from the community in reuniting with their pets.',
+        image: homeWard,
         technologies: ['JavaScript', 'React Native', 'Firebase'],
+        github:"https://github.com/meetSuthar299/homeward-App",
+        figma:"https://www.figma.com/file/ngq0iER7f3X3sTdhsYz2IK/Homeward-Main"
     },
     {
         id: 3,
-        title: 'Project 3',
-        description: 'This is the description of Project 3.',
-        image: 'project3.jpg',
-        technologies: ['JavaScript', 'Stripe', 'ReactJS', 'Redux'],
-    },
-    {
-        id: 4,
-        title: 'Project 4',
-        description: 'This is the description of Project 4.',
-        image: 'project4.jpg',
-        technologies: ['JavaScript', 'Stripe', 'ReactJS', 'Redux', 'Firebase'],
+        title: 'Rock Paper Scissors Game',
+        description: 'A simple Rock Paper Scissors game made using ReactJS and tailwindCSS. The game can be played against the computer, or have the computers battle themselves.',
+        image: rockPaperScissors,
+        technologies: ['JavaScript', 'ReactJS', "tailwindCSS"],
+        projectLink:"https://meetsuthar299.github.io/Rock-Paper-Scissors/",
+        github:"https://github.com/meetSuthar299/Rock-Paper-Scissors"
     },
 ];
 
@@ -54,23 +56,50 @@ const TechIcon = ({ tech }) => {
     }
 };
 
+
 const ProjectCard = ({ project }) => (
-    <div className="max-w-md mx-auto overflow-hidden backdrop-filter backdrop-blur-lg text-center text-white hover:shadow-lg  bg-[rgba(0,0,0,0.32)] border-black rounded-xl shadow-md animate-fade-in">
-        <img className="w-full h-48 object-cover rounded-t-lg" src={project.image} alt={project.title} />
+    <div
+        className="max-w-md mx-auto overflow-hidden backdrop-filter backdrop-blur-lg text-center text-white hover:shadow-lg  bg-[rgba(0,0,0,0.32)] border-black rounded-xl shadow-md animate-fade-in"
+        //onClick={() => window.open(project.github)}
+    >
+        <img
+            className="w-full h-48 object-cover rounded-t-lg"
+            src={project.image}
+            alt={project.title}
+        />
         <div className="p-4">
             <h2 className="font-bold text-xl">{project.title}</h2>
+            <div className="flex justify-center mt-4 space-x-4">
+                {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <FaGithub className="h-6 w-6 text-gray-400 hover:text-gray-500 transition-all duration-200 hover:scale-110" />
+                    </a>
+                )}
+                {project.projectLink && (
+                    <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
+                        <FaExternalLinkAlt className="h-6 w-6 text-gray-400 hover:text-gray-500 transition-all duration-200 hover:scale-110" />
+                    </a>
+                )}
+                {project.figma && (
+                    <a href={project.figma} target="_blank" rel="noopener noreferrer">
+                        <FaFigma className="h-6 w-6 text-gray-400 hover:text-gray-500 transition-all duration-200 hover:scale-110" />
+                    </a>
+                )}
+            </div>
+            <hr className="w-full my-6 border-gray-300" />
             <p className="text-sm">{project.description}</p>
             <div className="mt-4 space-x-2 flex justify-center">
                 {project.technologies.map((tech, index) => (
-                    <TechIcon key={index} tech={tech} />
+                    <TechIcon key={index} tech={tech} alt={tech} />
                 ))}
             </div>
+            
         </div>
     </div>
 );
 
 const ProjectList = ({ projects }) => (
-    <div className="pt-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+    <div className="pt-5 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 text-xl">
         {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
         ))}
