@@ -24,10 +24,6 @@ export default function Logo() {
                 <rect x="8" y="7" width="5" height="12" className="text-white" />
                 <rect x="13" y="1" width="5" height="18" className="text-white" />
             </svg>
-
-            <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
-                Meet Suthar
-            </span>
         </Link>
     )
 }

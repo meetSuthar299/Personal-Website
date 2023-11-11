@@ -3,7 +3,7 @@ import { FaMailBulk } from 'react-icons/fa';
 import SocualMediaLinks from '../components/SocialmediaLinks';
 import emailjs from 'emailjs-com';
 
-function Contact() {
+export default function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
     
@@ -79,6 +79,4 @@ function Contact() {
             </div>
         </div>
     );
-}
-
-export default Contact;
+};

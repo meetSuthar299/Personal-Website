@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { FaBriefcase } from 'react-icons/fa';
-import { useResumeDataContext } from "../Providers/ResumeDataProvider";
+import { useResumeDataContext } from "../../Providers/ResumeDataProvider";
 
 function Experience() {
     const { resumeData } = useResumeDataContext();

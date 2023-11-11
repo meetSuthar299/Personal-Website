@@ -9,7 +9,7 @@ import commercialImg from "../Assets/images/Commercia-Img.jpg"
 
 function ItemCardList() {
     return (
-        <div className="mb-8 overflow-x-auto relativ flex flex-nowrap justify-start shadow-inner">
+        <div className="mb-8 overflow-x-auto relativ flex flex-nowrap justify-start shadow-inner cursor-grab">
                 <ItemCard
                     imgSrc={eventImg}
                     firstP="Event Photography"

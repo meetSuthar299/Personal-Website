@@ -3,7 +3,7 @@ import ItemCardList from "../components/ItemCardList";
 import { FaImages } from 'react-icons/fa';
 
 
-export const ContenCreationService = () => {
+export default function ContenCreationService() {
   return (
     <div className="px-4 py-16 md:px-24 lg:px-8 lg:py-20 relative z-50 backdrop-blur rounded-3xl bg-[rgba(0,0,0,0.53)]">
       <div className="w-fit mb-12">

@@ -42,22 +42,22 @@ function Skills() {
                 <AnimatedListItem
                     icon={<FaCode className="text-2xl mr-6" />}
                     title="Programming Languages"
-                    skills={['Java', 'C++', 'JavaScript', 'TypeScript', 'PHP']}
+                    skills={['JavaScript', 'TypeScript', 'PHP', 'Python']}
                 />
                 <AnimatedListItem
                     icon={<FaPaintBrush className="text-2xl mr-6" />}
-                    title="Front-end Web Development"
-                    skills={['ReactJS', 'React Native', 'HTML', 'CSS']}
+                    title="Front-end Web"
+                    skills={['CSS', 'TailwindCSS', 'Bootstrap', 'Material UI']}
                 />
                 <AnimatedListItem
                     icon={<FaCode className="text-2xl mr-6" />}
-                    title="Back-end Development"
-                    skills={['MySQL', 'SQL Server', 'MongoDB']}
+                    title="Back-end "
+                    skills={['MongoDB', 'NodeJS', 'ExpressJS', 'Laravel', 'Firebase']}
                 />
                 <AnimatedListItem
                     icon={<FaMobileAlt className="text-2xl mr-6" />}
                     title="Application Development"
-                    skills={['React Native']}
+                    skills={['React Native', 'React JS', 'Flutter']}
                 />
             </ul>
         </div>

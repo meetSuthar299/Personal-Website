@@ -8,31 +8,6 @@ export default function WebDevService() {
         <div className="relative px-4 py-24 lg:py-20 backdrop-blur rounded-3xl bg-[rgba(0,0,0,0.53)]" >
             <div className="max-w-xl mb-10 sm:text-center md:mb-12">
                 <h2 className="max-w-lg mb-6 font-sans text-5xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
-                    <span className="relative inline-block">
-                        <svg
-                            viewBox="0 0 52 24"
-                            fill="currentColor"
-                            className="absolute top-0 left-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-                        >
-                            <defs>
-                                <pattern
-                                    id="3071a3ad-db4a-4cbe-ac9a-47850b69e4b7"
-                                    x="0"
-                                    y="0"
-                                    width=".135"
-                                    height=".30"
-                                >
-                                    <circle cx="1" cy="1" r=".7" />
-                                </pattern>
-                            </defs>
-                            <rect
-                                fill="url(#3071a3ad-db4a-4cbe-ac9a-47850b69e4b7)"
-                                width="52"
-                                height="24"
-                            />
-                        </svg>
-                        <span className="relative"></span>
-                    </span>{' '}
                     Web Application Development
                 </h2>
             </div>
@@ -69,23 +44,6 @@ export default function WebDevService() {
                         </div>
                     </div>
                     <div className="flex">
-                        <div className="mr-4">
-                            <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-indigo-50">
-                                <svg
-                                    className="w-8 h-8 text-deep-purple-accent-400"
-                                    stroke="currentColor"
-                                    viewBox="0 0 52 52"
-                                >
-                                    <polygon
-                                        strokeWidth="3"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        fill="none"
-                                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
                         <div>
                             <h6 className="mb-2 font-semibold leading-5 text-2xl text-white pb-3">
                                 Seamless User Experience
@@ -134,16 +92,20 @@ export default function WebDevService() {
                         className="object-cover w-full h-56 col-span-2 rounded-xl shadow-lg"
                         src={webDevImg2}
                         alt=""
+                        loading="lazy"
+                        
                     />
                     <img
                         className="object-cover w-full h-48 rounded-xl shadow-lg"
                         src={webDevImg1}
                         alt=""
+                        loading="lazy"
                     />
                     <img
                         className="object-cover w-full h-48 rounded-xl shadow-lg"
                         src={webDevImg3}
                         alt=""
+                        loading="lazy"
                     />
                 </div>
             </div>

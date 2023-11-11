@@ -11,7 +11,7 @@ const TypingText = ({ text }) => (
     />
 );
 
-const Home = () => {
+export default function Home() {
 
     const { resumeData } = useResumeDataContext();
     const name = useMemo(() => resumeData[0].name + "                           ", [resumeData]);
@@ -36,5 +36,3 @@ const Home = () => {
         </div>
     );
 }
-
-export default Home; 

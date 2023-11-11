@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { FaGraduationCap, FaCertificate } from 'react-icons/fa';
-import { useResumeDataContext } from "../Providers/ResumeDataProvider";
+import { useResumeDataContext } from "../../Providers/ResumeDataProvider";
 
 function Education() {
     const { resumeData } = useResumeDataContext();

@@ -2,7 +2,6 @@ import About from './Pages/About.jsx';
 import Services from './Pages/Services.jsx';
 import Contact from './Pages/Contact.jsx'
 import React, { useEffect } from 'react';
-import { BrowserRouter } from "react-router-dom";
 import ResumeDataProvider from './Providers/ResumeDataProvider.js';
 import Home from './Pages/Home.jsx'
 import Footer from './components/Footer.jsx';
