@@ -13,10 +13,10 @@ function ItemCard({ imgSrc, firstP, secondP }) {
                     decoding="async"
                     sizes="(max-width: 140px) 100vw, (max-width: 168px) 50vw, 33.3vw"
                 />
-                <div className="absolute inset-0 flex flex-col justify-center items-center px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-50 opacity-100 hover:opacity-0">
+                <div className="absolute inset-0 flex flex-col justify-center items-center px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-50 opacity-100">
                     <p className="mb-4 text-lg font-bold text-gray-100">{firstP}</p>
                 </div>
-                <div className="absolute inset-0 flex flex-col justify-center items-center px-6 py-4 transition-opacity duration-200 bg-black bg-opacity- opacity-0 hover:opacity-100 text-center">
+                <div className="absolute inset-0 flex flex-col justify-center items-center px-6 py-4 transition-opacity duration-200 bg-[rgb(0,0,0)] opacity-0 hover:opacity-100 text-center">
                     <p className="text-sm tracking-wide text-gray-300">{secondP}</p>
                 </div>
             </div>
