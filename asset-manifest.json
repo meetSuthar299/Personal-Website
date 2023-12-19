@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.e65658d6.css",
-    "main.js": "/static/js/main.3258723c.js",
+    "main.css": "/static/css/main.aae5152d.css",
+    "main.js": "/static/js/main.4c34d4d4.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/NetflixClone.jpg": "/static/media/NetflixClone.b53a32dbb3db06cec9e4.jpg",
     "static/media/Commercia-Img.jpg": "/static/media/Commercia-Img.2fdd65d6c5bc417f752d.jpg",
-    "static/media/shopMIT.png": "/static/media/shopMIT.9aca6035063ba89f9887.png",
     "static/media/meetPic.jpg": "/static/media/meetPic.14ff65cbfb3c9f6497ea.jpg",
     "static/media/rockPaperSc.jpg": "/static/media/rockPaperSc.be407a3baeae1e5219ea.jpg",
     "static/media/editing-img.jpg": "/static/media/editing-img.d31337f7ee837cbd1ce3.jpg",
     "static/media/Homeward.jpg": "/static/media/Homeward.c2df6fdee7beb18b6ead.jpg",
     "static/media/auto-img.jpg": "/static/media/auto-img.a5298292015b2a269962.jpg",
     "static/media/event-img.jpg": "/static/media/event-img.6a00db29b356bd89548b.jpg",
+    "static/media/shopMIT.png": "/static/media/shopMIT.daf1fb45faa1f484d353.png",
     "static/media/print-img.jpg": "/static/media/print-img.41e1da90b35f641b6e82.jpg",
     "static/media/portrait-img.jpg": "/static/media/portrait-img.a55a8b32409914d18434.jpg",
     "index.html": "/index.html",
-    "main.e65658d6.css.map": "/static/css/main.e65658d6.css.map",
-    "main.3258723c.js.map": "/static/js/main.3258723c.js.map",
+    "main.aae5152d.css.map": "/static/css/main.aae5152d.css.map",
+    "main.4c34d4d4.js.map": "/static/js/main.4c34d4d4.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e65658d6.css",
-    "static/js/main.3258723c.js"
+    "static/css/main.aae5152d.css",
+    "static/js/main.4c34d4d4.js"
   ]
 }
