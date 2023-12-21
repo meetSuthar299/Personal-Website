@@ -30,7 +30,7 @@ function Experience() {
         return (
             <li
                 ref={(el) => listItemRefs.current.push(el)}
-                className="items-center mb-5 p-5 bg-[rgba(0,0,0,0.45)] backdrop-blur border-black rounded-xl shadow-lg animate-fade-in list-none"
+                className="items-center mb-5 p-5 bg-[rgba(0,0,0,0.45)] backdrop-blur rounded-lg shadow-lg animate-fade-in list-none border-slate-800 border"
             >
                 <div className="flex items-center">
                     {icon}

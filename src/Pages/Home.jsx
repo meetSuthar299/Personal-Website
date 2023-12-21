@@ -1,38 +1,27 @@
 import React, { Suspense, useMemo } from "react";
-import { useResumeDataContext } from "../Providers/ResumeDataProvider";
-import Typed from 'react-typed';
+import TypingHeading from "../Components/TypingHeading";
+import StarsBackground from "../Components/StarsBackground";
+import { Link } from "react-scroll";
+import { FaChevronDown } from "react-icons/fa";
 
-const TypingText = ({ text }) => (
-    <Typed
-        strings={[text]}
-        typeSpeed={150}
-        backSpeed={200}
-        loop={true}
-    />
-);
+const headings = [
+    "Hi, I'm Meet Suthar!",
+    "I'm a Developer!",
+    "I'm a Photographer",
+    "I'm a Freelancer!",
+    "I'm a Designer!",
+    "I'm a Problem Solver!",
+    "I'm a Coffeeholic!",
+];
 
 export default function Home() {
-
-    const { resumeData } = useResumeDataContext();
-    const name = useMemo(() => resumeData[0].name + "                           ", [resumeData]);
-
     return (
-        <div id="home" className="h-screen w-screen flex justify-center items-center fixed top-0 z-0 overflow-hidden" >
-            <video muted autoPlay loop className="absolute w-screen h-screen object-cover overflow-hidden">
-                <source
-                    src="./BgVideo.mp4"
-                    type="video/mp4"
-                />
-            </video>
-            <h1 className="text-3xl text-white font-mono z-10 text-balance p-5 backdrop-blur rounded-lg shadow-2xl border-2 border-black m-5">
-                {"<h1> Hi I'm "}
-                <span className="font-semibold">
-                    <Suspense fallback={<div>Loading...</div>}>
-                        <TypingText text={name} />
-                    </Suspense>
-                </span>
-                {"</h1>"}
-            </h1>
+        <div id="home" className=" h-screen w-screen flex justify-center items-center fixed top-0 overflow-hidden bg-[rgb(6,4,12)] text-white">
+            <StarsBackground />
+            <TypingHeading headings={headings} className="font-semibold " />
+            <Link to={"about"} smooth={true} duration={1000} offset={-100} className="fixed bottom-6">
+                <FaChevronDown className="text-3xl animate-bounce" />
+            </Link>
         </div>
     );
 }

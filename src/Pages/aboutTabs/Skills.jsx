@@ -2,19 +2,22 @@ import React, { useEffect, useRef } from 'react';
 import { FaPaintBrush, FaCode, FaMobileAlt } from 'react-icons/fa';
 
 function Skills() {
+
     const listItemRefs = useRef([]);
 
     useEffect(() => {
         listItemRefs.current.forEach((item, index) => {
-            item.style.animationDelay = `${index * 0.2}s`;
+            item.style.animationDelay = `${index * 0.2}`;
             item.classList.add('animate-fade-in');
         });
     }, []);
+
+
     function AnimatedListItem({ icon, title, skills }) {
         return (
             <li
                 ref={(el) => listItemRefs.current.push(el)}
-                className="items-center mb-5 p-5 bg-[rgba(0,0,0,0.45)] border-black rounded-xl shadow-lg animate-fade-in"
+                className="items-center mb-5 p-5 bg-[rgba(0,0,0,0.68)] rounded-lg shadow-lg animate-fade-in border-slate-800 border"
             >
                 <div className="flex items-center">
                     {icon}

@@ -11,7 +11,7 @@ export default function Logo() {
             className="inline-flex items-center lg:mx-auto cursor-pointer"
         >
             <svg
-                className="w-8 text-deep-purple-accent-400"
+                className="w-8"
                 viewBox="0 0 24 24"
                 strokeLinejoin="round"
                 strokeWidth="2"
@@ -24,6 +24,7 @@ export default function Logo() {
                 <rect x="8" y="7" width="5" height="12" className="text-white" />
                 <rect x="13" y="1" width="5" height="18" className="text-white" />
             </svg>
+            <h1 className="text-white text-2xl font-bold text-neutrals-50">Meet Suthar</h1>
         </Link>
     )
 }

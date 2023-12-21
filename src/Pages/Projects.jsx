@@ -57,9 +57,9 @@ const LinkIcon = ({ href, icon, tooltip }) => (
 );
 
 const ProjectCard = ({ project }) => (
-    <div className="max-w-md mx-auto overflow-hidden backdrop-filter backdrop-blur-lg text-center text-white hover:shadow-lg bg-[rgba(0,0,0,0.32)] border-black rounded-xl shadow-md animate-fade-in">
+    <div className="max-w-md mx-auto overflow-hidden backdrop-filter backdrop-blur-lg text-center text-white hover:shadow-lg  shadow-md animate-fade-in rounded-lg bg-[rgba(0,0,0,0.8)] border-slate-700 border">
         <img
-            className="w-full h-48 object-cover rounded-t-lg"
+            className="w-full h-52 object-cover rounded-t-lg"
             src={project.image}
             alt={project.title}
         />
@@ -103,7 +103,7 @@ const ProjectCard = ({ project }) => (
 );
 
 const ProjectList = ({ projects }) => (
-    <div className="pt-5 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 text-xl">
+    <div className="pt-5 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 text-xl">
         {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
         ))}
@@ -142,7 +142,7 @@ export default function Projects() {
     };
 
     return (
-        <div className="px-4 py-16 md:px-8 lg:px-24 lg:py-20 relative z-50 backdrop-blur rounded-3xl bg-[rgba(0,0,0,0.53)]">
+        <div id="project" className="px-4 py-16 md:px-8 lg:px-24 lg:py-20 relative z-10 bg-[rgba(44,44,44,0.21)] border-slate-800 backdrop-blur-md border-x">
             <div className="w-full mb-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <h2 className="max-w-lg mb-6 font-sans text-5xl font-bold text-white sm:text-4xl">

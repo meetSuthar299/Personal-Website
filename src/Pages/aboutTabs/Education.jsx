@@ -23,7 +23,7 @@ function Education() {
         return (
             <div
                 ref={(el) => listItemRefs.current.push(el)}
-                className="items-center mb-5 p-5 bg-[rgba(0,0,0,0.45)] border-black rounded-xl shadow-md animate-fade-in"
+                className="items-center mb-5 p-5 bg-[rgba(0,0,0,0.45)] rounded-lg shadow-md animate-fade-in border-slate-800 border"
             >
                 <div className="flex items-center">
                     {icon}
@@ -52,7 +52,7 @@ function Education() {
             ))}
             <div
                 ref={(el) => listItemRefs.current.push(el)}
-                className="items-center mb-5 p-5 bg-[rgba(0,0,0,0.45)] border-black rounded-xl shadow-md animate-fade-in"
+                className="items-center mb-5 p-5 bg-[rgba(0,0,0,0.45)] rounded-xl shadow-md animate-fade-in border-slate-800 border"
             >
                 <div className="flex items-center">
                     <FaCertificate className="text-2xl mr-4 mt-1" />

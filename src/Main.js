@@ -1,11 +1,12 @@
 import About from './Pages/About.jsx';
-import Services from './Pages/Services.jsx';
 import Contact from './Pages/Contact.jsx'
 import React, { useEffect } from 'react';
 import ResumeDataProvider from './Providers/ResumeDataProvider.js';
 import Home from './Pages/Home.jsx'
-import Footer from './components/Footer.jsx';
-import NavBar from './components/NavBar.jsx';
+import Footer from './Sections/Footer.jsx';
+import NavBar from './Sections/NavBar.jsx';
+import ContenCreationService from './Pages/ContectCreationService.jsx';
+import Projects from './Pages/Projects.jsx';
 
 function App() {
   useEffect(() => {
@@ -27,7 +28,8 @@ function App() {
           <NavBar />
           <Home />
           <About />
-          <Services />
+          <Projects />
+          <ContenCreationService />
           <Contact />
           <Footer />
         </ResumeDataProvider>
