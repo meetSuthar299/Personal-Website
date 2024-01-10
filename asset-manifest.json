@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e5d64227.css",
-    "main.js": "/static/js/main.86e41fdc.js",
+    "main.js": "/static/js/main.545434b0.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/NetflixClone.jpg": "/static/media/NetflixClone.b53a32dbb3db06cec9e4.jpg",
     "static/media/Commercia-Img.jpg": "/static/media/Commercia-Img.2fdd65d6c5bc417f752d.jpg",
@@ -13,14 +13,15 @@
     "static/media/event-img.jpg": "/static/media/event-img.6a00db29b356bd89548b.jpg",
     "static/media/shopMIT.png": "/static/media/shopMIT.daf1fb45faa1f484d353.png",
     "static/media/print-img.jpg": "/static/media/print-img.41e1da90b35f641b6e82.jpg",
+    "static/media/ArkticStudios.jpg": "/static/media/ArkticStudios.0042b1b20efab71887d5.jpg",
     "static/media/portrait-img.jpg": "/static/media/portrait-img.a55a8b32409914d18434.jpg",
     "index.html": "/index.html",
     "main.e5d64227.css.map": "/static/css/main.e5d64227.css.map",
-    "main.86e41fdc.js.map": "/static/js/main.86e41fdc.js.map",
+    "main.545434b0.js.map": "/static/js/main.545434b0.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e5d64227.css",
-    "static/js/main.86e41fdc.js"
+    "static/js/main.545434b0.js"
   ]
 }
