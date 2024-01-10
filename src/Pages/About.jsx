@@ -12,7 +12,7 @@ export default function About() {
     const { resumeData } = useResumeDataContext();
     const aboutInfoTitleRef = useRef(null);
     const [marginTop] = useState(window.innerHeight);
-    const [activeTab, setActiveTab] = useState('');
+    const [activeTab, setActiveTab] = useState('skills');
 
     const handleTabClick = (tab) => {
         setActiveTab((prevTab) => (prevTab === tab ? '' : tab));
@@ -27,13 +27,15 @@ export default function About() {
 
     return (
         <div id="about" className="relative p-4 mx-auto threeDWrap sm:max-w-2xl md:max-w-full lg:max-w-screen md:px-8 lg:px-12 mt-screen z-10 bg-[rgba(44,44,44,0.21)] backdrop-blur-md rounded-t-3xl text-white border-slate-800 border-t border-x" style={{ marginTop }}>
-            
+
             <div className="flex flex-col lg:flex-row p-1 lg:p-12 ">
                 <div id="aboutInfo" className="lg:w-1/2 lg:mr-8 lg:ml-4 p-8 max-w-5xl">
                     <div id="aboutInfoTitle" className="opacity-1 transform transition-opacity duration-500 ease-in-out" ref={aboutInfoTitleRef}>
-                        <h1 className="text-4xl pb-4">About me:</h1>
+                        <h1 className="text-4xl pb-4">About</h1>
                         <p className='pb-4 text-lg'>{resumeData[0].aboutMe}</p>
-                    </div>                    <div>
+                    </div>
+
+                    <div>
                         <nav id="AboutTabTitles" className="flex justify-center mt-4 text-center">
                             {['skills', 'experience', 'education'].map((tab) => (
                                 <button
@@ -53,7 +55,7 @@ export default function About() {
                 <div className="lg:w-1/2">
                     <img src={UserImg} alt="Meet Suthar" className="object-cover w-full h-auto shadow-2xl transition-all rounded-md" />
                 </div>
-                
+
             </div>
         </div>
     );

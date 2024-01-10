@@ -6,18 +6,28 @@ import netflixClone from '../Assets/images/NetflixClone.jpg';
 import homeWard from '../Assets/images/Homeward.jpg';
 import rockPaperScissors from '../Assets/images/rockPaperSc.jpg';
 import shopMIT from "../Assets/images/shopMIT.png"
+import ArkticStusio from "../Assets/images/ArkticStudios.jpg"
 
 const projectsData = [
     {
         id: 1,
+        title: 'Arktic Studios',
+        description: 'A full stack website built using the MERN stack and designed with TailwindCSS for Arktic Studios. The site features dynamic gallery and projects, and an admin portal to manage projects and gallery images.',
+        image: ArkticStusio,
+        technologies: ['JavaScript', 'ReactJS', "NodeJS", 'Redux', 'Mongo DB', 'Express', 'TailwindCSS'],
+        projectLink: "https://arkticstudios.com/",
+    },
+    {
+        id: 2,
         title: 'ShopMIT E-Commerce App',
         description: 'A full stack ecommerce website built using the MERN stack for MIT Infosys for customer facing store to order products for local delivery, and internal  inventory management/tracking. (under development)',
         image: shopMIT,
         technologies: ['JavaScript', 'ReactJS', "NodeJS", 'Redux', 'Mongo DB', 'Express'],
         projectLink: "https://shopmit.vercel.app/",
+        github: "https://github.com/meetSuthar299/Ecommerce-App",
     },
     {
-        id: 2,
+        id: 3,
         title: 'Netflix Clone',
         description: 'The Netflix clone is a web application built with ReactJS, featuring Firebase authentication, Firestore integration for storing user preferences, Redux for state management, and Stripe for simulated payment processing. It uses the TMDB API to provide a dynamic selection of movies and related videos.',
         image: netflixClone,
@@ -26,7 +36,7 @@ const projectsData = [
         projectLink: "https://meetsuthar299.github.io/netflix-build/#/",
     },
     {
-        id: 3,
+        id: 4,
         title: 'Homeward-App',
         description: 'Homeward is a React Native expo-managed mobile application for finding lost pets. Users may create posts to spread the word and get help from the community in reuniting with their pets.',
         image: homeWard,
@@ -35,7 +45,7 @@ const projectsData = [
         figma: "https://www.figma.com/file/ngq0iER7f3X3sTdhsYz2IK/Homeward-Main"
     },
     {
-        id: 4,
+        id: 5,
         title: 'Rock Paper Scissors Game',
         description: 'A simple Rock Paper Scissors game made using ReactJS and tailwindCSS. The game can be played against the computer, or have the computers battle themselves.',
         image: rockPaperScissors,

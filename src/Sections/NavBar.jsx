@@ -77,7 +77,10 @@ export default function NavBar() {
                                             <NavLink to="about">About Me</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="services">What I do</NavLink>
+                                            <NavLink to="project">Projects</NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="ContenCreationService">Photography</NavLink>
                                         </li>
                                         <li>
                                             <NavLink to="contact">Contact Me</NavLink>

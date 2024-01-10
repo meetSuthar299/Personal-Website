@@ -6,9 +6,9 @@ import { FaChevronDown } from "react-icons/fa";
 
 const headings = [
     "Hi, I'm Meet Suthar!",
-    "I'm a Developer!",
+    "I'm a Full Stack Developer!",
+    "I'm an Entrepreneur!",
     "I'm a Photographer",
-    "I'm a Freelancer!",
     "I'm a Designer!",
     "I'm a Problem Solver!",
     "I'm a Coffeeholic!",

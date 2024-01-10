@@ -6,7 +6,7 @@ const data = [
     {
       name: "Meet Suthar",
       email: "meetsuthar299@gmail.com",
-      aboutMe: "I'm a web developer based in Calgary, Canada, with a passion for Full-Stact Development. I love combining creativity with technology to craft visually stunning and engaging websites and applications. With a strong foundation in HTML, CSS, and JavaScript, I enjoy transforming complex ideas into clean and intuitive designs.",
+      aboutMe: "I'm an enthusiastic Full Stack Developer and Freelancer located in Canada. My passion lies in merging creativity with technology to design visually appealing and interactive websites and applications. Rooted in Object-Oriented Programming (OOP), I take pleasure in translating intricate concepts into streamlined and user-friendly designs.",
       address: [{
         city: "Calgary",
         country: "Canada",
